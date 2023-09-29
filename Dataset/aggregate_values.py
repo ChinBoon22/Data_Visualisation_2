@@ -18,4 +18,4 @@ aggregated_df[['gust_mph', 'visibility_km',
 
 # Now, filtered_df contains only rows where "wind_direction" is one of the specified values
 # Save the aggregated data to a new CSV file
-aggregated_df.to_csv('aggregated_data_pivot.csv', index=False)
+aggregated_df.to_csv('aggregated_data_no_pivot.csv', index=False)

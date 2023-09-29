@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Parallel Coordinate Plot",
   "data": {
-    "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/Global_Weather_Repository_Pivoted.csv"
+    "url": "../Dataset/aggregated_data_pivot.py"
   },
   "width": 600,
   "height": 300,
