@@ -6,20 +6,14 @@
   },
   "width": 600,
   "height": 300,
-  "title": "Air Quality Ozone for",
+  "title": "Air Quality Ozone for Top 20 Highest ",
   "mark": "rect",
   "encoding": {
     "x": {
       "field": "last_updated_day",
-      "type": "temporal",
+      "type": "ordinal",
       "title": "Date",
-      "axis": {
-        "labelAngle": 0,
-        "format": "%d/%m/%Y"
-      },
-      "scale": {
-        "domain": ["29/08/2023", "08/09/2023"]
-      }
+      "timeUnit": "binnedutcyearmonthdate"
     },
     "y": {
       "field": "country",
@@ -28,7 +22,6 @@
     },
     "color": {
       "field": "air_quality_Ozone",
-      "aggregate": "mean",
       "type": "quantitative",
       "legend": {
         "title": "Air Quality Ozone"

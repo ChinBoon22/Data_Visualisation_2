@@ -1,236 +1,221 @@
 continent,country,last_updated_day,gust_mph,visibility_km,uv_index,air_quality_Ozone
-Africa,Morocco,01/09/2023,9.6,5.0,1,111.6
-Africa,Morocco,02/09/2023,14.1,5.0,1,75.1
-Africa,Morocco,03/09/2023,9.8,5.0,1,75.1
-Africa,Morocco,04/09/2023,9.2,5.0,1,88.7
-Africa,Morocco,05/09/2023,3.8,5.0,1,74.4
-Africa,Morocco,06/09/2023,7.8,5.0,1,85.8
-Africa,Morocco,07/09/2023,6.3,5.0,1,94.4
-Africa,Morocco,08/09/2023,3.8,5.0,1,87.25
-Africa,Morocco,29/08/2023,8.5,5.0,6,85.8
-Africa,Morocco,30/08/2023,10.5,5.0,1,88.0
-Africa,Morocco,31/08/2023,2.5,5.0,1,107.3
-America,Bahamas,01/09/2023,15.9,10.0,7,86.6
-America,Bahamas,02/09/2023,24.2,10.0,7,94.4
-America,Bahamas,03/09/2023,22.8,10.0,7,103.0
-America,Bahamas,04/09/2023,17.2,10.0,7,114.4
-America,Bahamas,05/09/2023,16.6,10.0,7,100.1
-America,Bahamas,06/09/2023,15.7,10.0,7,108.7
-America,Bahamas,07/09/2023,14.1,10.0,7,83.7
-America,Bahamas,08/09/2023,15.0,10.0,7,69.4
-America,Bahamas,29/08/2023,17.0,10.0,1,42.55
-America,Bahamas,30/08/2023,23.0,10.0,8,42.2
-America,Bahamas,31/08/2023,4.0,10.0,8,41.8
-America,Haiti,01/09/2023,5.6,9.0,6,68.7
-America,Haiti,02/09/2023,2.0,9.0,6,220.3
-America,Haiti,03/09/2023,2.9,9.0,7,134.5
-America,Haiti,04/09/2023,4.9,8.0,7,18.1
-America,Haiti,05/09/2023,0.4,7.0,1,70.1
-America,Haiti,06/09/2023,4.5,9.0,1,128.8
-America,Haiti,07/09/2023,3.8,9.0,1,200.3
-America,Haiti,08/09/2023,9.8,9.0,7,155.9
-America,Haiti,29/08/2023,8.95,9.0,1,28.8
-America,Haiti,30/08/2023,2.9,10.0,6,26.5
-America,Haiti,31/08/2023,3.4,10.0,6,55.1
-America,Mexico,01/09/2023,9.6,9.7,6,266.1
-America,Mexico,02/09/2023,5.4,13.0,7,101.6
-America,Mexico,03/09/2023,4.0,6.4,6,131.6
-America,Mexico,04/09/2023,5.8,13.0,7,113.0
-America,Mexico,05/09/2023,5.8,14.0,7,124.5
-America,Mexico,06/09/2023,4.7,9.7,6,118.7
-America,Mexico,07/09/2023,6.5,13.0,6,197.4
-America,Mexico,08/09/2023,9.8,16.0,6,128.8
-America,Mexico,29/08/2023,6.5,16.0,1,20.25
-America,Mexico,30/08/2023,10.5,13.0,6,167.4
-America,Mexico,31/08/2023,11.4,1.6,5,117.3
-America,United States of America,01/09/2023,6.7,16.0,7,95.8
-America,United States of America,02/09/2023,4.9,16.0,8,107.3
-America,United States of America,03/09/2023,12.1,16.0,7,87.3
-America,United States of America,04/09/2023,1.6,16.0,6,90.8
-America,United States of America,05/09/2023,6.5,16.0,6,94.4
-America,United States of America,06/09/2023,4.5,16.0,7,111.6
-America,United States of America,07/09/2023,3.8,16.0,6,98.7
-America,United States of America,08/09/2023,4.7,16.0,7,105.9
-America,United States of America,29/08/2023,16.65,16.0,1,62.6
-America,United States of America,30/08/2023,14.3,16.0,7,73.7
-America,United States of America,31/08/2023,2.7,16.0,4,73.0
-Asia,Bahrain,01/09/2023,26.8,10.0,1,154.5
-Asia,Bahrain,02/09/2023,17.7,10.0,1,121.6
-Asia,Bahrain,03/09/2023,8.3,10.0,1,93.0
-Asia,Bahrain,04/09/2023,3.4,8.0,1,128.8
-Asia,Bahrain,05/09/2023,7.4,10.0,1,240.3
-Asia,Bahrain,06/09/2023,4.7,9.0,1,174.5
-Asia,Bahrain,07/09/2023,9.2,4.5,1,91.6
-Asia,Bahrain,08/09/2023,14.3,7.0,1,135.9
-Asia,Bahrain,09/09/2023,4.3,10.0,1,121.6
-Asia,Bahrain,29/08/2023,10.1,10.0,9,254.6
-Asia,Bahrain,30/08/2023,7.6,10.0,1,100.1
-Asia,Bahrain,31/08/2023,12.1,10.0,1,150.2
-Asia,Cyprus,01/09/2023,12.3,10.0,1,70.8
-Asia,Cyprus,02/09/2023,5.8,10.0,1,64.4
-Asia,Cyprus,03/09/2023,7.6,10.0,1,57.2
-Asia,Cyprus,04/09/2023,3.4,10.0,1,79.4
-Asia,Cyprus,05/09/2023,3.1,10.0,1,41.5
-Asia,Cyprus,06/09/2023,4.9,10.0,1,57.9
-Asia,Cyprus,07/09/2023,11.9,10.0,1,67.2
-Asia,Cyprus,08/09/2023,10.7,10.0,1,73.0
-Asia,Cyprus,09/09/2023,18.3,10.0,1,75.8
-Asia,Cyprus,29/08/2023,5.8,10.0,8,110.2
-Asia,Cyprus,30/08/2023,2.2,10.0,1,52.2
-Asia,Cyprus,31/08/2023,11.0,10.0,1,88.0
-Asia,Iraq,01/09/2023,19.5,10.0,1,83.0
-Asia,Iraq,02/09/2023,26.2,10.0,1,97.3
-Asia,Iraq,03/09/2023,20.6,10.0,1,97.3
-Asia,Iraq,04/09/2023,21.0,10.0,1,88.7
-Asia,Iraq,05/09/2023,19.2,10.0,1,55.8
-Asia,Iraq,06/09/2023,20.1,10.0,1,87.3
-Asia,Iraq,07/09/2023,28.9,10.0,1,91.6
-Asia,Iraq,08/09/2023,19.7,10.0,1,85.1
-Asia,Iraq,09/09/2023,18.1,10.0,1,55.1
-Asia,Iraq,29/08/2023,8.7,10.0,9,186.0
-Asia,Iraq,30/08/2023,12.1,10.0,1,74.4
-Asia,Iraq,31/08/2023,12.3,10.0,1,71.5
-Asia,Kuwait,01/09/2023,22.6,10.0,1,105.9
-Asia,Kuwait,02/09/2023,28.6,10.0,1,107.3
-Asia,Kuwait,03/09/2023,14.8,10.0,1,108.7
-Asia,Kuwait,04/09/2023,15.9,10.0,1,97.3
-Asia,Kuwait,05/09/2023,11.2,10.0,1,52.9
-Asia,Kuwait,06/09/2023,23.5,10.0,1,111.6
-Asia,Kuwait,07/09/2023,31.1,10.0,1,115.9
-Asia,Kuwait,08/09/2023,5.8,10.0,1,8.5
-Asia,Kuwait,09/09/2023,2.9,10.0,1,52.9
-Asia,Kuwait,29/08/2023,2.5,10.0,9,181.7
-Asia,Kuwait,30/08/2023,13.4,10.0,8,95.8
-Asia,Kuwait,31/08/2023,22.8,10.0,1,144.5
-Asia,Lebanon,01/09/2023,2.2,8.0,1,91.6
-Asia,Lebanon,02/09/2023,4.5,10.0,1,90.8
-Asia,Lebanon,03/09/2023,9.6,8.0,1,93.0
-Asia,Lebanon,04/09/2023,8.7,8.0,1,140.2
-Asia,Lebanon,05/09/2023,2.0,10.0,1,87.3
-Asia,Lebanon,06/09/2023,7.6,10.0,1,105.9
-Asia,Lebanon,07/09/2023,7.4,10.0,1,95.8
-Asia,Lebanon,08/09/2023,4.0,8.0,1,81.5
-Asia,Lebanon,09/09/2023,15.0,10.0,1,70.8
-Asia,Lebanon,29/08/2023,20.4,6.0,7,108.7
-Asia,Lebanon,30/08/2023,14.1,8.0,1,95.8
-Asia,Lebanon,31/08/2023,4.0,6.0,1,83.7
-Asia,Mongolia,01/09/2023,9.2,10.0,6,79.4
-Asia,Mongolia,02/09/2023,13.2,10.0,5,66.5
-Asia,Mongolia,03/09/2023,11.2,10.0,6,85.1
-Asia,Mongolia,04/09/2023,7.2,10.0,6,76.5
-Asia,Mongolia,05/09/2023,12.1,10.0,7,93.0
-Asia,Mongolia,06/09/2023,15.7,10.0,7,133.0
-Asia,Mongolia,07/09/2023,12.5,10.0,3,52.9
-Asia,Mongolia,08/09/2023,15.2,10.0,6,76.5
-Asia,Mongolia,09/09/2023,6.7,10.0,1,86.6
-Asia,Mongolia,29/08/2023,3.8,10.0,4,14.0
-Asia,Mongolia,30/08/2023,9.4,10.0,5,36.5
-Asia,Mongolia,31/08/2023,6.5,10.0,6,70.1
-Asia,Pakistan,01/09/2023,4.9,10.0,1,52.2
-Asia,Pakistan,02/09/2023,9.6,10.0,1,34.7
-Asia,Pakistan,03/09/2023,10.5,10.0,1,27.9
-Asia,Pakistan,04/09/2023,11.0,10.0,1,113.0
-Asia,Pakistan,05/09/2023,10.5,10.0,1,44.4
-Asia,Pakistan,06/09/2023,11.9,10.0,1,40.4
-Asia,Pakistan,07/09/2023,14.1,10.0,1,35.1
-Asia,Pakistan,08/09/2023,14.5,10.0,1,35.1
-Asia,Pakistan,09/09/2023,11.2,10.0,1,54.4
-Asia,Pakistan,29/08/2023,4.0,10.0,8,277.5
-Asia,Pakistan,30/08/2023,7.4,10.0,7,98.7
-Asia,Pakistan,31/08/2023,13.0,10.0,1,47.2
-Asia,Qatar,01/09/2023,27.5,10.0,1,167.4
-Asia,Qatar,02/09/2023,13.4,10.0,1,103.0
-Asia,Qatar,03/09/2023,7.6,10.0,1,0.0
-Asia,Qatar,04/09/2023,8.9,9.0,1,34.0
-Asia,Qatar,05/09/2023,6.3,10.0,1,0.0
-Asia,Qatar,06/09/2023,9.2,7.0,1,110.2
-Asia,Qatar,07/09/2023,16.8,3.2,1,0.0
-Asia,Qatar,08/09/2023,12.3,9.0,1,97.3
-Asia,Qatar,09/09/2023,9.2,10.0,1,22.9
-Asia,Qatar,29/08/2023,16.1,10.0,9,147.3
-Asia,Qatar,30/08/2023,17.0,10.0,8,57.2
-Asia,Qatar,31/08/2023,16.1,10.0,1,111.6
-Asia,Saudi Arabia,01/09/2023,12.3,10.0,1,79.4
-Asia,Saudi Arabia,02/09/2023,5.4,10.0,1,62.2
-Asia,Saudi Arabia,03/09/2023,15.7,10.0,1,83.7
-Asia,Saudi Arabia,04/09/2023,6.5,10.0,1,123.0
-Asia,Saudi Arabia,05/09/2023,3.8,10.0,1,55.1
-Asia,Saudi Arabia,06/09/2023,2.9,10.0,1,100.1
-Asia,Saudi Arabia,07/09/2023,13.6,10.0,1,85.1
-Asia,Saudi Arabia,08/09/2023,17.4,10.0,1,98.7
-Asia,Saudi Arabia,09/09/2023,9.8,10.0,1,125.9
-Asia,Saudi Arabia,29/08/2023,7.4,10.0,10,160.2
-Asia,Saudi Arabia,30/08/2023,20.8,10.0,1,98.7
-Asia,Saudi Arabia,31/08/2023,12.5,10.0,1,144.5
-Asia,Turkmenistan,01/09/2023,7.2,10.0,1,51.5
-Asia,Turkmenistan,02/09/2023,5.1,10.0,1,43.6
-Asia,Turkmenistan,03/09/2023,2.5,10.0,1,58.7
-Asia,Turkmenistan,04/09/2023,7.2,10.0,1,52.2
-Asia,Turkmenistan,05/09/2023,22.4,10.0,1,44.4
-Asia,Turkmenistan,06/09/2023,14.3,10.0,1,53.6
-Asia,Turkmenistan,07/09/2023,11.2,10.0,1,53.6
-Asia,Turkmenistan,08/09/2023,20.1,10.0,1,73.7
-Asia,Turkmenistan,09/09/2023,10.3,10.0,1,42.6
-Asia,Turkmenistan,29/08/2023,3.8,10.0,8,223.2
-Asia,Turkmenistan,30/08/2023,6.3,10.0,7,85.8
-Asia,Turkmenistan,31/08/2023,6.7,10.0,1,42.9
-Asia,United Arab Emirates,01/09/2023,9.8,10.0,1,131.6
-Asia,United Arab Emirates,02/09/2023,12.5,10.0,1,183.1
-Asia,United Arab Emirates,03/09/2023,8.1,10.0,1,143.1
-Asia,United Arab Emirates,04/09/2023,19.9,10.0,1,128.8
-Asia,United Arab Emirates,05/09/2023,8.9,10.0,1,117.3
-Asia,United Arab Emirates,06/09/2023,16.3,8.0,1,125.9
-Asia,United Arab Emirates,07/09/2023,22.1,10.0,1,188.8
-Asia,United Arab Emirates,08/09/2023,26.2,10.0,1,100.1
-Asia,United Arab Emirates,09/09/2023,16.8,10.0,1,151.6
-Asia,United Arab Emirates,29/08/2023,25.1,10.0,9,320.4
-Asia,United Arab Emirates,30/08/2023,7.8,10.0,8,77.3
-Asia,United Arab Emirates,31/08/2023,9.2,10.0,1,70.8
-Asia,Yemen,01/09/2023,2.2,9.0,1,51.5
-Asia,Yemen,02/09/2023,14.5,10.0,1,61.5
-Asia,Yemen,03/09/2023,8.3,10.0,1,78.0
-Asia,Yemen,04/09/2023,5.4,10.0,1,55.8
-Asia,Yemen,05/09/2023,5.1,10.0,1,60.1
-Asia,Yemen,06/09/2023,11.6,10.0,1,85.8
-Asia,Yemen,07/09/2023,11.6,10.0,1,65.1
-Asia,Yemen,08/09/2023,18.8,10.0,1,76.5
-Asia,Yemen,09/09/2023,7.6,10.0,1,83.0
-Asia,Yemen,29/08/2023,4.7,10.0,6,114.4
-Asia,Yemen,30/08/2023,4.7,10.0,5,41.8
-Asia,Yemen,31/08/2023,6.5,9.0,1,50.1
-Europe,Greece,01/09/2023,11.0,10.0,1,79.4
-Europe,Greece,02/09/2023,5.8,10.0,1,34.7
-Europe,Greece,03/09/2023,15.0,10.0,1,108.7
-Europe,Greece,04/09/2023,12.1,10.0,1,77.3
-Europe,Greece,05/09/2023,9.6,10.0,1,83.7
-Europe,Greece,06/09/2023,8.5,10.0,1,72.2
-Europe,Greece,07/09/2023,11.9,7.0,1,80.1
-Europe,Greece,08/09/2023,17.7,10.0,1,79.4
-Europe,Greece,09/09/2023,21.7,10.0,1,88.7
-Europe,Greece,29/08/2023,10.5,10.0,8,177.4
-Europe,Greece,30/08/2023,14.1,10.0,1,72.2
-Europe,Greece,31/08/2023,13.6,10.0,1,98.7
-Europe,Malta,01/09/2023,11.4,10.0,1,91.6
-Europe,Malta,02/09/2023,9.8,10.0,1,91.6
-Europe,Malta,03/09/2023,12.3,10.0,1,78.0
-Europe,Malta,04/09/2023,7.8,10.0,1,97.3
-Europe,Malta,05/09/2023,21.5,10.0,1,97.3
-Europe,Malta,06/09/2023,35.8,10.0,1,93.0
-Europe,Malta,07/09/2023,36.7,10.0,1,85.1
-Europe,Malta,08/09/2023,29.1,10.0,1,98.7
-Europe,Malta,09/09/2023,28.9,10.0,1,95.8
-Europe,Malta,29/08/2023,19.0,10.0,7,83.0
-Europe,Malta,30/08/2023,17.7,10.0,1,88.7
-Europe,Malta,31/08/2023,7.4,10.0,1,80.8
-Europe,San Marino,01/09/2023,11.4,10.0,1,78.0
-Europe,San Marino,02/09/2023,8.5,10.0,1,100.1
-Europe,San Marino,03/09/2023,4.7,10.0,1,127.3
-Europe,San Marino,04/09/2023,4.5,10.0,1,134.5
-Europe,San Marino,05/09/2023,25.3,10.0,1,114.4
-Europe,San Marino,06/09/2023,7.6,10.0,1,87.3
-Europe,San Marino,07/09/2023,15.0,10.0,1,84.4
-Europe,San Marino,08/09/2023,15.4,10.0,1,88.7
-Europe,San Marino,09/09/2023,15.2,10.0,1,78.0
-Europe,San Marino,29/08/2023,12.3,10.0,6,65.8
-Europe,San Marino,30/08/2023,20.1,10.0,1,54.4
-Europe,San Marino,31/08/2023,9.2,10.0,1,67.2
+Africa,Morocco,2023-08-29,8.5,5.0,6,85.8
+Africa,Morocco,2023-08-30,10.5,5.0,1,88.0
+Africa,Morocco,2023-08-31,2.5,5.0,1,107.3
+Africa,Morocco,2023-09-01,9.6,5.0,1,111.6
+Africa,Morocco,2023-09-02,14.1,5.0,1,75.1
+Africa,Morocco,2023-09-03,9.8,5.0,1,75.1
+Africa,Morocco,2023-09-04,9.2,5.0,1,88.7
+Africa,Morocco,2023-09-05,3.8,5.0,1,74.4
+Africa,Morocco,2023-09-06,7.8,5.0,1,85.8
+Africa,Morocco,2023-09-07,6.3,5.0,1,94.4
+Africa,Morocco,2023-09-08,3.8,5.0,1,87.25
+America,Bahamas,2023-08-29,17.0,10.0,1,42.55
+America,Bahamas,2023-08-30,23.0,10.0,8,42.2
+America,Bahamas,2023-08-31,4.0,10.0,8,41.8
+America,Bahamas,2023-09-01,15.9,10.0,7,86.6
+America,Bahamas,2023-09-02,24.2,10.0,7,94.4
+America,Bahamas,2023-09-03,22.8,10.0,7,103.0
+America,Bahamas,2023-09-04,17.2,10.0,7,114.4
+America,Bahamas,2023-09-05,16.6,10.0,7,100.1
+America,Bahamas,2023-09-06,15.7,10.0,7,108.7
+America,Bahamas,2023-09-07,14.1,10.0,7,83.7
+America,Bahamas,2023-09-08,15.0,10.0,7,69.4
+America,Haiti,2023-08-29,8.95,9.0,1,28.8
+America,Haiti,2023-08-30,2.9,10.0,6,26.5
+America,Haiti,2023-08-31,3.4,10.0,6,55.1
+America,Haiti,2023-09-01,5.6,9.0,6,68.7
+America,Haiti,2023-09-02,2.0,9.0,6,220.3
+America,Haiti,2023-09-03,2.9,9.0,7,134.5
+America,Haiti,2023-09-04,4.9,8.0,7,18.1
+America,Haiti,2023-09-05,0.4,7.0,1,70.1
+America,Haiti,2023-09-06,4.5,9.0,1,128.8
+America,Haiti,2023-09-07,3.8,9.0,1,200.3
+America,Haiti,2023-09-08,9.8,9.0,7,155.9
+America,Mexico,2023-08-29,6.5,16.0,1,20.25
+America,Mexico,2023-08-30,10.5,13.0,6,167.4
+America,Mexico,2023-08-31,11.4,1.6,5,117.3
+America,Mexico,2023-09-01,9.6,9.7,6,266.1
+America,Mexico,2023-09-02,5.4,13.0,7,101.6
+America,Mexico,2023-09-03,4.0,6.4,6,131.6
+America,Mexico,2023-09-04,5.8,13.0,7,113.0
+America,Mexico,2023-09-05,5.8,14.0,7,124.5
+America,Mexico,2023-09-06,4.7,9.7,6,118.7
+America,Mexico,2023-09-07,6.5,13.0,6,197.4
+America,Mexico,2023-09-08,9.8,16.0,6,128.8
+America,United States of America,2023-08-29,16.65,16.0,1,62.6
+America,United States of America,2023-08-30,14.3,16.0,7,73.7
+America,United States of America,2023-08-31,2.7,16.0,4,73.0
+America,United States of America,2023-09-01,6.7,16.0,7,95.8
+America,United States of America,2023-09-02,4.9,16.0,8,107.3
+America,United States of America,2023-09-03,12.1,16.0,7,87.3
+America,United States of America,2023-09-04,1.6,16.0,6,90.8
+America,United States of America,2023-09-05,6.5,16.0,6,94.4
+America,United States of America,2023-09-06,4.5,16.0,7,111.6
+America,United States of America,2023-09-07,3.8,16.0,6,98.7
+America,United States of America,2023-09-08,4.7,16.0,7,105.9
+Asia,Bahrain,2023-08-29,10.1,10.0,9,254.6
+Asia,Bahrain,2023-08-30,7.6,10.0,1,100.1
+Asia,Bahrain,2023-08-31,12.1,10.0,1,150.2
+Asia,Bahrain,2023-09-01,26.8,10.0,1,154.5
+Asia,Bahrain,2023-09-02,17.7,10.0,1,121.6
+Asia,Bahrain,2023-09-03,8.3,10.0,1,93.0
+Asia,Bahrain,2023-09-04,3.4,8.0,1,128.8
+Asia,Bahrain,2023-09-05,7.4,10.0,1,240.3
+Asia,Bahrain,2023-09-06,4.7,9.0,1,174.5
+Asia,Bahrain,2023-09-07,9.2,4.5,1,91.6
+Asia,Bahrain,2023-09-08,14.3,7.0,1,135.9
+Asia,Cyprus,2023-08-29,5.8,10.0,8,110.2
+Asia,Cyprus,2023-08-30,2.2,10.0,1,52.2
+Asia,Cyprus,2023-08-31,11.0,10.0,1,88.0
+Asia,Cyprus,2023-09-01,12.3,10.0,1,70.8
+Asia,Cyprus,2023-09-02,5.8,10.0,1,64.4
+Asia,Cyprus,2023-09-03,7.6,10.0,1,57.2
+Asia,Cyprus,2023-09-04,3.4,10.0,1,79.4
+Asia,Cyprus,2023-09-05,3.1,10.0,1,41.5
+Asia,Cyprus,2023-09-06,4.9,10.0,1,57.9
+Asia,Cyprus,2023-09-07,11.9,10.0,1,67.2
+Asia,Cyprus,2023-09-08,10.7,10.0,1,73.0
+Asia,Iraq,2023-08-29,8.7,10.0,9,186.0
+Asia,Iraq,2023-08-30,12.1,10.0,1,74.4
+Asia,Iraq,2023-08-31,12.3,10.0,1,71.5
+Asia,Iraq,2023-09-01,19.5,10.0,1,83.0
+Asia,Iraq,2023-09-02,26.2,10.0,1,97.3
+Asia,Iraq,2023-09-03,20.6,10.0,1,97.3
+Asia,Iraq,2023-09-04,21.0,10.0,1,88.7
+Asia,Iraq,2023-09-05,19.2,10.0,1,55.8
+Asia,Iraq,2023-09-06,20.1,10.0,1,87.3
+Asia,Iraq,2023-09-07,28.9,10.0,1,91.6
+Asia,Iraq,2023-09-08,19.7,10.0,1,85.1
+Asia,Kuwait,2023-08-29,2.5,10.0,9,181.7
+Asia,Kuwait,2023-08-30,13.4,10.0,8,95.8
+Asia,Kuwait,2023-08-31,22.8,10.0,1,144.5
+Asia,Kuwait,2023-09-01,22.6,10.0,1,105.9
+Asia,Kuwait,2023-09-02,28.6,10.0,1,107.3
+Asia,Kuwait,2023-09-03,14.8,10.0,1,108.7
+Asia,Kuwait,2023-09-04,15.9,10.0,1,97.3
+Asia,Kuwait,2023-09-05,11.2,10.0,1,52.9
+Asia,Kuwait,2023-09-06,23.5,10.0,1,111.6
+Asia,Kuwait,2023-09-07,31.1,10.0,1,115.9
+Asia,Kuwait,2023-09-08,5.8,10.0,1,8.5
+Asia,Lebanon,2023-08-29,20.4,6.0,7,108.7
+Asia,Lebanon,2023-08-30,14.1,8.0,1,95.8
+Asia,Lebanon,2023-08-31,4.0,6.0,1,83.7
+Asia,Lebanon,2023-09-01,2.2,8.0,1,91.6
+Asia,Lebanon,2023-09-02,4.5,10.0,1,90.8
+Asia,Lebanon,2023-09-03,9.6,8.0,1,93.0
+Asia,Lebanon,2023-09-04,8.7,8.0,1,140.2
+Asia,Lebanon,2023-09-05,2.0,10.0,1,87.3
+Asia,Lebanon,2023-09-06,7.6,10.0,1,105.9
+Asia,Lebanon,2023-09-07,7.4,10.0,1,95.8
+Asia,Lebanon,2023-09-08,4.0,8.0,1,81.5
+Asia,Mongolia,2023-08-29,3.8,10.0,4,14.0
+Asia,Mongolia,2023-08-30,9.4,10.0,5,36.5
+Asia,Mongolia,2023-08-31,6.5,10.0,6,70.1
+Asia,Mongolia,2023-09-01,9.2,10.0,6,79.4
+Asia,Mongolia,2023-09-02,13.2,10.0,5,66.5
+Asia,Mongolia,2023-09-03,11.2,10.0,6,85.1
+Asia,Mongolia,2023-09-04,7.2,10.0,6,76.5
+Asia,Mongolia,2023-09-05,12.1,10.0,7,93.0
+Asia,Mongolia,2023-09-06,15.7,10.0,7,133.0
+Asia,Mongolia,2023-09-07,12.5,10.0,3,52.9
+Asia,Mongolia,2023-09-08,15.2,10.0,6,76.5
+Asia,Pakistan,2023-08-29,4.0,10.0,8,277.5
+Asia,Pakistan,2023-08-30,7.4,10.0,7,98.7
+Asia,Pakistan,2023-08-31,13.0,10.0,1,47.2
+Asia,Pakistan,2023-09-01,4.9,10.0,1,52.2
+Asia,Pakistan,2023-09-02,9.6,10.0,1,34.7
+Asia,Pakistan,2023-09-03,10.5,10.0,1,27.9
+Asia,Pakistan,2023-09-04,11.0,10.0,1,113.0
+Asia,Pakistan,2023-09-05,10.5,10.0,1,44.4
+Asia,Pakistan,2023-09-06,11.9,10.0,1,40.4
+Asia,Pakistan,2023-09-07,14.1,10.0,1,35.1
+Asia,Pakistan,2023-09-08,14.5,10.0,1,35.1
+Asia,Qatar,2023-08-29,16.1,10.0,9,147.3
+Asia,Qatar,2023-08-30,17.0,10.0,8,57.2
+Asia,Qatar,2023-08-31,16.1,10.0,1,111.6
+Asia,Qatar,2023-09-01,27.5,10.0,1,167.4
+Asia,Qatar,2023-09-02,13.4,10.0,1,103.0
+Asia,Qatar,2023-09-03,7.6,10.0,1,0.0
+Asia,Qatar,2023-09-04,8.9,9.0,1,34.0
+Asia,Qatar,2023-09-05,6.3,10.0,1,0.0
+Asia,Qatar,2023-09-06,9.2,7.0,1,110.2
+Asia,Qatar,2023-09-07,16.8,3.2,1,0.0
+Asia,Qatar,2023-09-08,12.3,9.0,1,97.3
+Asia,Saudi Arabia,2023-08-29,7.4,10.0,10,160.2
+Asia,Saudi Arabia,2023-08-30,20.8,10.0,1,98.7
+Asia,Saudi Arabia,2023-08-31,12.5,10.0,1,144.5
+Asia,Saudi Arabia,2023-09-01,12.3,10.0,1,79.4
+Asia,Saudi Arabia,2023-09-02,5.4,10.0,1,62.2
+Asia,Saudi Arabia,2023-09-03,15.7,10.0,1,83.7
+Asia,Saudi Arabia,2023-09-04,6.5,10.0,1,123.0
+Asia,Saudi Arabia,2023-09-05,3.8,10.0,1,55.1
+Asia,Saudi Arabia,2023-09-06,2.9,10.0,1,100.1
+Asia,Saudi Arabia,2023-09-07,13.6,10.0,1,85.1
+Asia,Saudi Arabia,2023-09-08,17.4,10.0,1,98.7
+Asia,Turkmenistan,2023-08-29,3.8,10.0,8,223.2
+Asia,Turkmenistan,2023-08-30,6.3,10.0,7,85.8
+Asia,Turkmenistan,2023-08-31,6.7,10.0,1,42.9
+Asia,Turkmenistan,2023-09-01,7.2,10.0,1,51.5
+Asia,Turkmenistan,2023-09-02,5.1,10.0,1,43.6
+Asia,Turkmenistan,2023-09-03,2.5,10.0,1,58.7
+Asia,Turkmenistan,2023-09-04,7.2,10.0,1,52.2
+Asia,Turkmenistan,2023-09-05,22.4,10.0,1,44.4
+Asia,Turkmenistan,2023-09-06,14.3,10.0,1,53.6
+Asia,Turkmenistan,2023-09-07,11.2,10.0,1,53.6
+Asia,Turkmenistan,2023-09-08,20.1,10.0,1,73.7
+Asia,United Arab Emirates,2023-08-29,25.1,10.0,9,320.4
+Asia,United Arab Emirates,2023-08-30,7.8,10.0,8,77.3
+Asia,United Arab Emirates,2023-08-31,9.2,10.0,1,70.8
+Asia,United Arab Emirates,2023-09-01,9.8,10.0,1,131.6
+Asia,United Arab Emirates,2023-09-02,12.5,10.0,1,183.1
+Asia,United Arab Emirates,2023-09-03,8.1,10.0,1,143.1
+Asia,United Arab Emirates,2023-09-04,19.9,10.0,1,128.8
+Asia,United Arab Emirates,2023-09-05,8.9,10.0,1,117.3
+Asia,United Arab Emirates,2023-09-06,16.3,8.0,1,125.9
+Asia,United Arab Emirates,2023-09-07,22.1,10.0,1,188.8
+Asia,United Arab Emirates,2023-09-08,26.2,10.0,1,100.1
+Asia,Yemen,2023-08-29,4.7,10.0,6,114.4
+Asia,Yemen,2023-08-30,4.7,10.0,5,41.8
+Asia,Yemen,2023-08-31,6.5,9.0,1,50.1
+Asia,Yemen,2023-09-01,2.2,9.0,1,51.5
+Asia,Yemen,2023-09-02,14.5,10.0,1,61.5
+Asia,Yemen,2023-09-03,8.3,10.0,1,78.0
+Asia,Yemen,2023-09-04,5.4,10.0,1,55.8
+Asia,Yemen,2023-09-05,5.1,10.0,1,60.1
+Asia,Yemen,2023-09-06,11.6,10.0,1,85.8
+Asia,Yemen,2023-09-07,11.6,10.0,1,65.1
+Asia,Yemen,2023-09-08,18.8,10.0,1,76.5
+Europe,Greece,2023-08-29,10.5,10.0,8,177.4
+Europe,Greece,2023-08-30,14.1,10.0,1,72.2
+Europe,Greece,2023-08-31,13.6,10.0,1,98.7
+Europe,Greece,2023-09-01,11.0,10.0,1,79.4
+Europe,Greece,2023-09-02,5.8,10.0,1,34.7
+Europe,Greece,2023-09-03,15.0,10.0,1,108.7
+Europe,Greece,2023-09-04,12.1,10.0,1,77.3
+Europe,Greece,2023-09-05,9.6,10.0,1,83.7
+Europe,Greece,2023-09-06,8.5,10.0,1,72.2
+Europe,Greece,2023-09-07,11.9,7.0,1,80.1
+Europe,Greece,2023-09-08,17.7,10.0,1,79.4
+Europe,Malta,2023-08-29,19.0,10.0,7,83.0
+Europe,Malta,2023-08-30,17.7,10.0,1,88.7
+Europe,Malta,2023-08-31,7.4,10.0,1,80.8
+Europe,Malta,2023-09-01,11.4,10.0,1,91.6
+Europe,Malta,2023-09-02,9.8,10.0,1,91.6
+Europe,Malta,2023-09-03,12.3,10.0,1,78.0
+Europe,Malta,2023-09-04,7.8,10.0,1,97.3
+Europe,Malta,2023-09-05,21.5,10.0,1,97.3
+Europe,Malta,2023-09-06,35.8,10.0,1,93.0
+Europe,Malta,2023-09-07,36.7,10.0,1,85.1
+Europe,Malta,2023-09-08,29.1,10.0,1,98.7
+Europe,San Marino,2023-08-29,12.3,10.0,6,65.8
+Europe,San Marino,2023-08-30,20.1,10.0,1,54.4
+Europe,San Marino,2023-08-31,9.2,10.0,1,67.2
+Europe,San Marino,2023-09-01,11.4,10.0,1,78.0
+Europe,San Marino,2023-09-02,8.5,10.0,1,100.1
+Europe,San Marino,2023-09-03,4.7,10.0,1,127.3
+Europe,San Marino,2023-09-04,4.5,10.0,1,134.5
+Europe,San Marino,2023-09-05,25.3,10.0,1,114.4
+Europe,San Marino,2023-09-06,7.6,10.0,1,87.3
+Europe,San Marino,2023-09-07,15.0,10.0,1,84.4
+Europe,San Marino,2023-09-08,15.4,10.0,1,88.7
