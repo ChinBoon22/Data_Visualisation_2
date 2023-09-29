@@ -1,0 +1,187 @@
+continent,country,gust_mph,visibility_km,uv_index,air_quality_Ozone
+Africa,Algeria,29.8,10.0,7,100.1
+Africa,Angola,15.0,10.0,6,147.3
+Africa,Benin,23.9,10.0,6,38.3
+Africa,Botswana,13.2,10.0,5,186.0
+Africa,Burkina Faso,24.8,10.0,7,18.2
+Africa,Burundi,8.9,10.0,7,64.4
+Africa,Cameroon,6.7,10.0,5,12.2
+Africa,Central African Republic,6.0,10.0,7,1.0
+Africa,Chad,17.2,10.0,7,24.3
+Africa,Congo,13.2,10.0,8,50.1
+Africa,Democratic Republic of Congo,12.5,10.0,8,50.1
+Africa,Djibouti,25.9,10.0,9,69.4
+Africa,Egypt,23.5,10.0,1,95.8
+Africa,Equatorial Guinea,16.3,10.0,6,61.5
+Africa,Eritrea,16.3,10.0,6,61.5
+Africa,Ethiopia,8.9,10.0,3,38.6
+Africa,Gabon,16.8,10.0,6,66.5
+Africa,Gambia,37.8,10.0,6,55.8
+Africa,Ghana,19.5,10.0,7,49.4
+Africa,Guinea,29.3,10.0,5,69.4
+Africa,Guinea-Bissau,22.4,10.0,6,40.8
+Africa,Kenya,10.5,10.0,6,63.7
+Africa,Lesotho,11.9,10.0,5,94.4
+Africa,Liberia,18.3,10.0,6,68.0
+Africa,Malawi,12.5,10.0,6,83.0
+Africa,Mali,12.3,10.0,5,9.8
+Africa,Mauritania,26.4,10.0,7,75.1
+Africa,Morocco,14.1,5.0,6,111.6
+Africa,Mozambique,24.8,10.0,5,67.2
+Africa,Namibia,16.3,10.0,7,151.6
+Africa,Niger,20.8,10.0,8,26.1
+Africa,Nigeria,5.8,10.0,6,28.6
+Africa,Rwanda,8.1,10.0,7,54.4
+Africa,Senegal,29.1,10.0,6,68.0
+Africa,Sierra Leone,29.3,10.0,6,40.4
+Africa,Somalia,28.6,10.0,7,69.4
+Africa,South Africa,20.6,10.0,5,128.8
+Africa,Sudan,35.6,10.0,8,50.8
+Africa,Swaziland,12.8,10.0,5,67.2
+Africa,Tanzania,16.8,10.0,6,51.5
+Africa,Tunisia,14.5,10.0,7,101.6
+Africa,Uganda,11.6,10.0,6,45.8
+Africa,Zambia,16.1,10.0,5,107.3
+Africa,Zimbabwe,17.2,10.0,5,125.9
+America,Antigua and Barbuda,23.3,10.0,6,67.2
+America,Argentina,19.9,10.0,1,44.0
+America,Bahamas,24.2,10.0,8,114.4
+America,Barbados,27.3,10.0,6,40.1
+America,Belize,12.5,10.0,8,49.4
+America,Bolivia,19.9,10.0,6,65.8
+America,Brazil,10.3,10.0,1,57.2
+America,Canada,23.0,24.0,8,103.0
+America,Chile,9.8,10.0,3,65.1
+America,Costa Rica,6.9,10.0,5,65.1
+America,Cuba,34.0,9.0,7,98.7
+America,Dominica,17.7,10.0,7,39.0
+America,Dominican Republic,10.3,10.0,8,55.8
+America,Ecuador,12.3,10.0,5,70.1
+America,El Salvador,9.4,10.0,7,103.0
+America,Grenada,23.7,10.0,7,40.8
+America,Guatemala,7.6,10.0,6,66.5
+America,Guyana,16.8,10.0,1,79.4
+America,Haiti,9.8,10.0,7,220.3
+America,Honduras,9.6,10.0,7,62.9
+America,Jamaica,6.9,10.0,7,73.0
+America,Mexico,11.4,16.0,7,266.1
+America,Nicaragua,24.4,10.0,8,85.1
+America,Panama,14.5,10.0,6,50.8
+America,Paraguay,20.8,10.0,1,37.9
+America,Peru,15.4,10.0,5,70.8
+America,Saint Kitts and Nevis,25.9,10.0,1,61.5
+America,Saint Lucia,21.0,10.0,1,97.3
+America,Saint Vincent and the Grenadines,28.6,10.0,1,65.1
+America,Suriname,16.3,10.0,1,62.2
+America,Trinidad and Tobago,14.5,10.0,1,36.5
+America,United States of America,18.3,16.0,8,111.6
+America,Uruguay,29.5,10.0,1,57.2
+America,Venezuela,8.5,10.0,1,82.3
+Asia,Afghanistan,8.3,10.0,7,130.2
+Asia,Armenia,14.5,10.0,8,121.6
+Asia,Azerbaijan,37.1,10.0,7,101.6
+Asia,Bahrain,26.8,10.0,9,254.6
+Asia,Bangladesh,15.9,10.0,8,64.4
+Asia,Bhutan,9.8,10.0,5,47.2
+Asia,Brunei Darussalam,11.6,10.0,8,39.7
+Asia,Cambodia,17.4,10.0,8,31.8
+Asia,China,11.2,10.0,7,140.2
+Asia,Cyprus,18.3,10.0,8,110.2
+Asia,Georgia,11.4,10.0,7,78.0
+Asia,India,13.0,10.0,9,95.8
+Asia,Indonesia,15.4,10.0,8,191.7
+Asia,Iran,10.3,10.0,8,135.9
+Asia,Iraq,28.9,10.0,9,186.0
+Asia,Israel,22.6,10.0,7,144.5
+Asia,Japan,24.2,10.0,8,46.5
+Asia,Jordan,22.8,8.0,7,131.6
+Asia,Kazakhstan,23.7,10.0,5,75.1
+Asia,Kuwait,31.1,10.0,9,181.7
+Asia,Kyrghyzstan,17.4,10.0,7,104.4
+Asia,Lebanon,20.4,10.0,7,140.2
+Asia,Malaysia,5.8,10.0,7,29.3
+Asia,Mongolia,15.7,10.0,7,133.0
+Asia,Myanmar,13.6,10.0,8,52.9
+Asia,Nepal,6.9,8.0,6,89.4
+Asia,North Korea,8.9,10.0,6,77.3
+Asia,Oman,13.9,10.0,8,81.5
+Asia,Pakistan,14.5,10.0,8,277.5
+Asia,Philippines,35.8,10.0,7,47.9
+Asia,Qatar,27.5,10.0,9,167.4
+Asia,Russia,14.8,10.0,8,94.4
+Asia,Saudi Arabia,20.8,10.0,10,160.2
+Asia,Singapore,18.3,10.0,7,57.2
+Asia,South Korea,13.2,10.0,7,47.2
+Asia,Sri Lanka,27.7,10.0,6,40.8
+Asia,Syria,18.1,10.0,8,127.3
+Asia,Tajikistan,6.7,10.0,8,104.4
+Asia,Thailand,14.1,10.0,8,29.0
+Asia,Timor-Leste,4.3,10.0,6,30.0
+Asia,Turkmenistan,22.4,10.0,8,223.2
+Asia,United Arab Emirates,26.2,10.0,9,320.4
+Asia,Uzbekistan,10.7,10.0,8,133.0
+Asia,Vietnam,16.1,10.0,8,90.1
+Asia,Yemen,18.8,10.0,6,114.4
+Atlantic,Cape Verde,29.5,10.0,7,65.1
+Atlantic,Iceland,68.7,10.0,3,67.2
+Australia,Australia,22.1,10.0,5,52.2
+Europe,Albania,14.5,10.0,6,104.4
+Europe,Andorra,9.8,10.0,4,93.0
+Europe,Austria,16.1,10.0,4,65.1
+Europe,Belarus,20.4,10.0,6,94.4
+Europe,Belgium,16.3,10.0,5,72.2
+Europe,Bosnia and Herzegovina,13.6,10.0,6,85.8
+Europe,Bulgaria,17.4,10.0,9,101.6
+Europe,Croatia,11.2,10.0,6,84.4
+Europe,Czech Republic,14.1,10.0,3,53.6
+Europe,Denmark,19.2,10.0,5,83.7
+Europe,Estonia,21.3,10.0,5,103.0
+Europe,Finland,21.0,10.0,5,70.8
+Europe,France,12.3,10.0,6,90.1
+Europe,Germany,13.2,10.0,3,78.7
+Europe,Greece,21.7,10.0,8,177.4
+Europe,Hungary,13.9,10.0,5,83.0
+Europe,Ireland,13.9,10.0,4,82.3
+Europe,Italy,24.2,10.0,5,90.8
+Europe,Latvia,17.9,10.0,5,80.1
+Europe,Liechtenstein,12.3,10.0,2,40.8
+Europe,Lithuania,17.0,10.0,5,90.8
+Europe,Luxembourg,19.2,10.0,4,84.4
+Europe,Macedonia,13.6,10.0,8,104.4
+Europe,Malta,36.7,10.0,7,98.7
+Europe,Monaco,17.9,10.0,6,88.0
+Europe,Montenegro,23.0,10.0,5,105.9
+Europe,Netherlands,18.6,10.0,5,68.7
+Europe,Norway,14.1,10.0,4,44.0
+Europe,Poland,11.4,10.0,7,65.8
+Europe,Portugal,24.2,10.0,6,86.6
+Europe,Romania,20.4,10.0,9,104.4
+Europe,Russia,15.0,10.0,3,35.8
+Europe,San Marino,25.3,10.0,6,134.5
+Europe,Serbia,9.8,10.0,5,91.6
+Europe,Slovakia,19.2,10.0,4,62.9
+Europe,Slovenia,5.6,10.0,4,85.8
+Europe,Spain,19.2,10.0,6,117.3
+Europe,Sweden,15.7,10.0,5,66.5
+Europe,Switzerland,9.4,10.0,4,57.2
+Europe,Turkey,22.1,10.0,8,163.1
+Europe,Ukraine,13.2,10.0,7,70.1
+Europe,United Kingdom,9.8,10.0,5,98.7
+Europe,Vatican City,24.2,10.0,5,90.8
+Indian,Comoros,31.8,10.0,5,67.2
+Indian,Madagascar,14.5,10.0,6,63.7
+Indian,Maldives,49.4,10.0,7,39.3
+Indian,Mauritius,23.9,10.0,7,108.7
+Indian,Seychelles Islands,30.6,10.0,6,88.7
+Pacific,Fiji Islands,20.1,10.0,7,68.7
+Pacific,Kiribati,26.4,10.0,7,36.5
+Pacific,Marshall Islands,25.1,32.0,7,33.6
+Pacific,Micronesia,23.7,24.0,7,14.8
+Pacific,New Zealand,30.6,10.0,4,70.1
+Pacific,Palau,18.6,23.0,1,29.3
+Pacific,Papua New Guinea,25.5,10.0,7,69.4
+Pacific,Samoa,32.7,10.0,7,65.8
+Pacific,Solomon Islands,18.3,10.0,7,44.7
+Pacific,Tonga,36.7,10.0,6,75.8
+Pacific,Tuvalu,39.6,10.0,6,46.5
+Pacific,Vanuatu,39.8,10.0,6,73.7

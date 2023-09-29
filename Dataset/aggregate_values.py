@@ -8,7 +8,7 @@ columns_to_aggregate = ['gust_mph', 'visibility_km',
                         'uv_index', 'air_quality_Ozone']
 
 # Group by 'country' and 'continent', and calculate the mean for each specified column
-aggregated_df = df.groupby(['continent'])[
+aggregated_df = df.groupby(['continent', 'country', 'last_updated_day'])[
     columns_to_aggregate].mean().reset_index()
 
 aggregated_df[['gust_mph', 'visibility_km',
@@ -18,4 +18,4 @@ aggregated_df[['gust_mph', 'visibility_km',
 
 # Now, filtered_df contains only rows where "wind_direction" is one of the specified values
 # Save the aggregated data to a new CSV file
-aggregated_df.to_csv('aggregated_data_no_pivot.csv', index=False)
+aggregated_df.to_csv('6_country_date.csv', index=False)

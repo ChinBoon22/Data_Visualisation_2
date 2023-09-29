@@ -2,21 +2,22 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Parallel Coordinate Plot",
   "data": {
-    "url": "../Dataset/aggregated_data_pivot.py"
+    "url": "../Dataset/5_no_pivot_all_countries.csv"
   },
   "width": 600,
   "height": 300,
   "transform": [
     { "window": [{ "op": "count", "as": "index" }] },
+    { "fold": ["gust_mph", "visibility_km", "uv_index", "air_quality_Ozone"] },
     {
       "joinaggregate": [
-        { "op": "min", "field": "values", "as": "min" },
-        { "op": "max", "field": "values", "as": "max" }
+        { "op": "min", "field": "value", "as": "min" },
+        { "op": "max", "field": "value", "as": "max" }
       ],
       "groupby": ["key"]
     },
     {
-      "calculate": "(datum.values - datum.min) / (datum.max-datum.min) ",
+      "calculate": "(datum.value - datum.min) / (datum.max-datum.min) ",
       "as": "norm_val"
     },
     {
@@ -37,7 +38,7 @@
       "encoding": {
         "color": { "type": "nominal", "field": "continent" },
         "detail": { "type": "nominal", "field": "index" },
-        "opacity": { "value": 1.0 },
+        "opacity": { "value": 0.5 },
         "x": { "type": "nominal", "field": "key" },
         "y": { "type": "quantitative", "field": "norm_val", "axis": null },
         "tooltip": [
