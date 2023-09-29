@@ -1,13 +1,36 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": { "url": "data/cars.json" },
+  "description": "Parallel Coordinate Plot",
+  "data": {
+    "url": "../Dataset/6_country_date.csv"
+  },
+  "width": 600,
+  "height": 300,
+  "title": "Global Data",
   "mark": "rect",
   "encoding": {
-    "y": { "field": "Origin", "type": "nominal" },
-    "x": { "field": "Cylinders", "type": "ordinal" },
-    "color": { "aggregate": "mean", "field": "Horsepower" }
-  },
-  "config": {
-    "axis": { "grid": true, "tickBand": "extent" }
+    "x": {
+      "field": "country",
+      "type": "ordinal",
+      "title": "Country",
+      "axis": {
+        "labelAngle": 0,
+        "format": "%e"
+      }
+    },
+    "y": {
+      "field": "last_updated_day",
+      "timeUnit": "month",
+      "type": "ordinal",
+      "title": "Month"
+    },
+    "color": {
+      "field": "temperature_celsius",
+      "aggregate": "mean",
+      "type": "quantitative",
+      "legend": {
+        "title": null
+      }
+    }
   }
 }

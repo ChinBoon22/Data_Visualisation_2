@@ -16,6 +16,14 @@ aggregated_df[['gust_mph', 'visibility_km',
                    'gust_mph', 'visibility_km',
                    'uv_index', 'air_quality_Ozone']].round(2)
 
+# Assuming you have the final aggregated dataset in a DataFrame called 'final_aggregated_df'
+# Sort the DataFrame by 'air_quality_Ozone' column in descending order
+final_aggregated_df = aggregated_df.sort_values(
+    by='air_quality_Ozone', ascending=False)
+
+# Select the top 20 rows
+top_20_countries_df = final_aggregated_df.head(20)
+
 # Now, filtered_df contains only rows where "wind_direction" is one of the specified values
 # Save the aggregated data to a new CSV file
-aggregated_df.to_csv('6_country_date.csv', index=False)
+aggregated_df.to_csv('6_top_20_ozone_country.csv', index=False)
