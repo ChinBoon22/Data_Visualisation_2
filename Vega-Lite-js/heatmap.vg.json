@@ -1,35 +1,37 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Parallel Coordinate Plot",
+  "description": "Heatmap",
   "data": {
-    "url": "../Dataset/6_country_date.csv"
+    "url": "../Dataset/6_top_20_ozone_country.csv"
   },
   "width": 600,
   "height": 300,
-  "title": "Global Data",
+  "title": "Air Quality Ozone for",
   "mark": "rect",
   "encoding": {
     "x": {
-      "field": "country",
-      "type": "ordinal",
-      "title": "Country",
+      "field": "last_updated_day",
+      "type": "temporal",
+      "title": "Date",
       "axis": {
         "labelAngle": 0,
-        "format": "%e"
+        "format": "%d/%m/%Y"
+      },
+      "scale": {
+        "domain": ["29/08/2023", "08/09/2023"]
       }
     },
     "y": {
-      "field": "last_updated_day",
-      "timeUnit": "month",
+      "field": "country",
       "type": "ordinal",
-      "title": "Month"
+      "title": "Country"
     },
     "color": {
-      "field": "temperature_celsius",
+      "field": "air_quality_Ozone",
       "aggregate": "mean",
       "type": "quantitative",
       "legend": {
-        "title": null
+        "title": "Air Quality Ozone"
       }
     }
   }
