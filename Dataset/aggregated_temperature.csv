@@ -1,0 +1,187 @@
+country,continent,temperature_celsius
+Afghanistan,Asia,18.066666666666666
+Albania,Europe,21.25
+Algeria,Africa,24.833333333333332
+Andorra,Europe,10.833333333333334
+Angola,Africa,22.0
+Antigua and Barbuda,America,28.5
+Argentina,America,12.416666666666666
+Armenia,Asia,23.75
+Australia,Australia,9.916666666666666
+Austria,Europe,15.833333333333334
+Azerbaijan,Asia,24.375
+Bahamas,America,29.733333333333334
+Bahrain,Asia,34.083333333333336
+Bangladesh,Asia,28.625000000000004
+Barbados,America,28.333333333333332
+Belarus,Europe,12.916666666666666
+Belgium,Europe,16.25
+Belize,America,29.333333333333332
+Benin,Africa,25.75
+Bhutan,Asia,11.766666666666671
+Bolivia,America,23.00833333333333
+Bosnia and Herzegovina,Europe,15.5
+Botswana,Africa,15.658333333333333
+Brazil,America,30.641666666666666
+Brunei Darussalam,Asia,26.666666666666668
+Bulgaria,Europe,18.969444444444445
+Burkina Faso,Africa,25.958333333333332
+Burundi,Africa,22.7
+Cambodia,Asia,27.666666666666668
+Cameroon,Africa,18.025
+Canada,America,22.333333333333332
+Cape Verde,Atlantic,27.0
+Central African Republic,Africa,23.683333333333334
+Chad,Africa,26.483333333333334
+Chile,America,12.333333333333334
+China,Asia,23.416666666666668
+Comoros,Indian,21.916666666666668
+Congo,Africa,25.508333333333336
+Costa Rica,America,23.166666666666668
+Croatia,Europe,16.5
+Cuba,America,29.916666666666668
+Cyprus,Asia,25.083333333333332
+Czech Republic,Europe,15.583333333333334
+Democratic Republic of Congo,Africa,25.45833333333333
+Denmark,Europe,15.5
+Djibouti,Africa,33.141666666666666
+Dominica,America,28.125
+Dominican Republic,America,28.25
+Ecuador,America,13.824999999999998
+Egypt,Africa,28.166666666666668
+El Salvador,America,28.25
+Equatorial Guinea,Africa,24.475000000000005
+Eritrea,Africa,19.025000000000002
+Estonia,Europe,13.916666666666666
+Ethiopia,Africa,14.0
+Fiji Islands,Pacific,26.583333333333332
+Finland,Europe,13.25
+France,Europe,19.333333333333332
+Gabon,Africa,25.46666666666667
+Gambia,Africa,25.5
+Georgia,Asia,22.166666666666668
+Germany,Europe,14.833333333333334
+Ghana,Africa,25.5
+Greece,Europe,25.0
+Grenada,America,28.916666666666668
+Guatemala,America,21.683333333333334
+Guinea,Africa,26.308333333333334
+Guinea-Bissau,Africa,25.816666666666666
+Guyana,America,27.166666666666668
+Haiti,America,29.691666666666666
+Honduras,America,26.900000000000002
+Hungary,Europe,15.583333333333334
+Iceland,Atlantic,9.983333333333333
+India,Asia,28.775000000000002
+Indonesia,Asia,22.84285714285714
+Iran,Asia,26.916666666666668
+Iraq,Asia,31.916666666666668
+Ireland,Europe,14.25
+Israel,Asia,26.166666666666668
+Italy,Europe,20.916666666666668
+Jamaica,America,31.25
+Japan,Asia,28.416666666666668
+Jordan,Asia,24.75
+Kazakhstan,Asia,11.166666666666666
+Kenya,Africa,17.3
+Kiribati,Pacific,28.90833333333333
+Kuwait,Asia,34.96666666666667
+Kyrghyzstan,Asia,16.45
+Latvia,Europe,13.666666666666666
+Lebanon,Asia,27.75
+Lesotho,Africa,11.383333333333333
+Liberia,Africa,24.775000000000002
+Liechtenstein,Europe,16.0
+Lithuania,Europe,14.166666666666666
+Luxembourg,Europe,15.916666666666666
+Macedonia,Europe,18.916666666666668
+Madagascar,Indian,16.462500000000002
+Malawi,Africa,18.25
+Malaysia,Asia,25.75
+Maldives,Indian,27.183333333333334
+Mali,Africa,24.833333333333332
+Malta,Europe,23.916666666666668
+Marshall Islands,Pacific,29.941666666666666
+Mauritania,Africa,28.08333333333333
+Mauritius,Indian,21.666666666666668
+Mexico,America,21.666666666666668
+Micronesia,Pacific,29.25
+Monaco,Europe,22.333333333333332
+Mongolia,Asia,12.083333333333334
+Montenegro,Europe,22.833333333333332
+Morocco,Africa,19.916666666666668
+Mozambique,Africa,19.533333333333335
+Myanmar,Asia,25.79166666666666
+Namibia,Africa,17.25
+Nepal,Asia,22.0
+Netherlands,Europe,16.916666666666668
+New Zealand,Pacific,13.916666666666666
+Nicaragua,America,30.675
+Niger,Africa,28.5
+Nigeria,Africa,24.333333333333332
+North Korea,Asia,21.433333333333337
+Norway,Europe,13.166666666666666
+Oman,Asia,30.0
+Pakistan,Asia,26.59166666666667
+Palau,Pacific,28.25
+Panama,America,28.75
+Papua New Guinea,Pacific,26.775000000000002
+Paraguay,America,28.891666666666666
+Peru,America,18.35
+Philippines,Asia,27.25
+Poland,Europe,15.166666666666666
+Portugal,Europe,19.583333333333332
+Qatar,Asia,34.083333333333336
+Romania,Europe,20.416666666666668
+Russia,Asia,15.158333333333333
+Russia,Europe,12.833333333333334
+Rwanda,Africa,20.166666666666668
+Saint Kitts and Nevis,America,28.833333333333332
+Saint Lucia,America,28.083333333333332
+Saint Vincent and the Grenadines,America,28.916666666666668
+Samoa,Pacific,30.0
+San Marino,Europe,19.75
+Saudi Arabia,Asia,31.416666666666668
+Senegal,Africa,27.349999999999998
+Serbia,Europe,18.166666666666668
+Seychelles Islands,Indian,26.541666666666668
+Sierra Leone,Africa,25.416666666666668
+Singapore,Asia,27.833333333333332
+Slovakia,Europe,16.166666666666668
+Slovenia,Europe,14.166666666666666
+Solomon Islands,Pacific,28.516666666666666
+Somalia,Africa,24.850000000000005
+South Africa,Africa,15.0
+South Korea,Asia,23.333333333333332
+Spain,Europe,20.583333333333332
+Sri Lanka,Asia,26.0
+Sudan,Africa,29.09166666666667
+Suriname,America,27.875
+Swaziland,Africa,13.275
+Sweden,Europe,13.583333333333334
+Switzerland,Europe,14.75
+Syria,Asia,22.5
+Tajikistan,Asia,19.75
+Tanzania,Africa,19.55
+Thailand,Asia,26.958333333333332
+Timor-Leste,Asia,22.2
+Tonga,Pacific,25.083333333333332
+Trinidad and Tobago,America,27.666666666666668
+Tunisia,Africa,24.5
+Turkey,Europe,21.458333333333332
+Turkmenistan,Asia,23.416666666666668
+Tuvalu,Pacific,30.972727272727273
+Uganda,Africa,20.55
+Ukraine,Europe,15.333333333333334
+United Arab Emirates,Asia,33.916666666666664
+United Kingdom,Europe,17.166666666666668
+United States of America,America,25.325
+Uruguay,America,11.75
+Uzbekistan,Asia,19.75
+Vanuatu,Pacific,25.641666666666666
+Vatican City,Europe,20.916666666666668
+Venezuela,America,28.666666666666668
+Vietnam,Asia,26.916666666666668
+Yemen,Asia,19.158333333333335
+Zambia,Africa,18.833333333333332
+Zimbabwe,Africa,15.475

@@ -1,0 +1,170 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Global Average Temperature Distribution (29-08-2023 - 13-09-2023)",
+  "width": 800,
+  "height": 400,
+  "padding": 0,
+  "projection": { "type": "equalEarth" },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/ne_110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeDash": [1, 1],
+        "fill": "#D3D3D3"
+      },
+      "encoding": {
+        "color": {
+          "value": "#D3D3D3"
+        }
+      }
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+        "format": { "type": "topojson", "feature": "oceans" }
+      },
+      "mark": { "type": "geoshape", "fill": "#A7C7E7" }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/ne_110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/aggregated_temperature.csv"
+            },
+            "key": "country",
+            "fields": ["temperature_celsius"]
+          }
+        }
+      ],
+      "mark": { "type": "geoshape" },
+      "encoding": {
+        "color": {
+          "field": "temperature_celsius",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [10, 12, 13, 14, 15, 17, 20, 23, 32],
+            "range": [
+              "#FFBF00",
+              "#F4BB44",
+              "#FF9B50",
+              "#FF7F34",
+              "#fe7f4e",
+              "#FF4500",
+              "#FF4433",
+              "#E41B17",
+              "#600000"
+            ]
+          },
+          "title": "Average Temperature (°C)"
+        },
+        "tooltip": [
+          { "field": "properties.NAME", "type": "nominal", "title": "Country" },
+          {
+            "field": "temperature_celsius",
+            "type": "quantitative",
+            "title": "Average Temperature (°C)"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/ne_110m.json",
+        "format": { "type": "topojson", "feature": "ne_110m_graticules_30" }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeDash": [1, 1],
+        "fill": null
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "country": "United States",
+            "latitude": 43.6,
+            "longitude": -110.49,
+            "label": "USA"
+          },
+          {
+            "country": "Australia",
+            "latitude": -20.28,
+            "longitude": 122.22,
+            "label": "Australia"
+          },
+          {
+            "country": "China",
+            "latitude": 39.93,
+            "longitude": 100.39,
+            "label": "China"
+          },
+          {
+            "country": "Brazil",
+            "latitude": -4.08,
+            "longitude": -58.17,
+            "label": "Brazil"
+          },
+          {
+            "country": "India",
+            "latitude": 28.6,
+            "longitude": 75.2,
+            "label": "India"
+          },
+          {
+            "country": "Russia",
+            "latitude": 71.7,
+            "longitude": 94.45,
+            "label": "Russia"
+          },
+          {
+            "country": "Algeria",
+            "latitude": 32.76,
+            "longitude": -8.05,
+            "label": "Algeria"
+          },
+          {
+            "country": "Canada",
+            "latitude": 60.42,
+            "longitude": -125.7,
+            "label": "Canada"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 0,
+        "dy": 13,
+        "fontSize": 12,
+        "fill": "white"
+      },
+      "encoding": {
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "text": { "field": "label", "type": "nominal" }
+      }
+    }
+  ]
+}
