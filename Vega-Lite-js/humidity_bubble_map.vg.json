@@ -4,37 +4,183 @@
   "data": { "url": "../Dataset/aggregated_weather.csv" },
   "width": 400,
   "height": 400,
-  "mark": {
-    "type": "circle",
-    "filled": true
-  },
-  "encoding": {
-    "x": {
-      "field": "humidity",
-      "type": "quantitative",
-      "title": "Humidity (%)"
-    },
-    "y": {
-      "field": "cloud",
-      "type": "quantitative",
-      "title": "Cloud Cover (%)"
-    },
-    "size": {
-      "field": "precip_mm",
-      "type": "quantitative",
-      "title": "Precipitation (mm)",
-      "scale": { "range": [100, 2000] }
-    },
-    "color": { "field": "continent", "type": "nominal", "title": "Continent" },
-    "tooltip": [
-      { "field": "country", "type": "nominal", "title": "Country" },
-      { "field": "humidity", "type": "quantitative", "title": "Humidity (%)" },
-      { "field": "cloud", "type": "quantitative", "title": "Cloud Cover (%)" },
-      {
-        "field": "precip_mm",
-        "type": "quantitative",
-        "title": "Precipitation (mm)"
+  "title": "Humidity, Cloud Cover and Precipitation Across Continents",
+  "layer": [
+    {
+      "selection": {
+        "continent_highlight": {
+          "type": "multi",
+          "fields": ["continent"],
+          "bind": "legend"
+        }
+      },
+      "mark": {
+        "type": "circle",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "humidity",
+          "type": "quantitative",
+          "title": "Humidity (%)"
+        },
+        "y": {
+          "field": "cloud",
+          "type": "quantitative",
+          "title": "Cloud Cover (%)"
+        },
+        "size": {
+          "field": "precip_mm",
+          "type": "quantitative",
+          "title": "Precipitation (mm)",
+          "scale": { "range": [100, 2000] }
+        },
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "title": "Continent",
+          "scale": {
+            "domain": [
+              "Africa",
+              "America",
+              "Asia",
+              "Atlantic",
+              "Australia",
+              "Europe",
+              "Indian",
+              "Pacific"
+            ],
+            "range": [
+              "#e41a1c",
+              "#7D3C98",
+              "#F57C00",
+              "#D4AC0D",
+              "#37474F",
+              "#377eb8",
+              "#922B21",
+              "#FF69B4"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": { "selection": "continent_highlight", "value": 0.55 },
+          "value": 0.2
+        },
+        "tooltip": [
+          { "field": "country", "type": "nominal", "title": "Country" },
+          { "field": "continent", "type": "nominal", "title": "Continent" },
+          {
+            "field": "humidity",
+            "type": "quantitative",
+            "title": "Humidity (%)"
+          },
+          {
+            "field": "cloud",
+            "type": "quantitative",
+            "title": "Cloud Cover (%)"
+          },
+          {
+            "field": "precip_mm",
+            "type": "quantitative",
+            "title": "Precipitation (mm)"
+          }
+        ]
       }
-    ]
-  }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -30,
+        "dy": 45,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Paraguay'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -100,
+        "dy": 80,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Iran'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 5,
+        "dy": -120,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Mexico'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 33,
+        "dy": -40,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Ecuador'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 85,
+        "dy": -170,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Micronesia'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ]
 }
