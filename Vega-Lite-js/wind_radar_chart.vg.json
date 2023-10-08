@@ -3,7 +3,7 @@
   "description": "A radar chart example, showing multiple dimensions in a radial layout.",
   "width": 500,
   "height": 500,
-  "padding": 40,
+  "padding": { "bottom": 40, "top": 20, "left": 20 },
   "autosize": { "type": "none", "contains": "padding" },
 
   "signals": [{ "name": "radius", "update": "width / 2" }],
@@ -11,7 +11,7 @@
   "data": [
     {
       "name": "table",
-      "url": "../Dataset/modified_wind_data.csv",
+      "url": "../Dataset/2_wind_data.csv",
       "format": {
         "type": "csv"
       }

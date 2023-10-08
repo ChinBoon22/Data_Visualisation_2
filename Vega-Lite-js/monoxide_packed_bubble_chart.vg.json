@@ -1,16 +1,60 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "width": 300,
-  "height": 300,
-  "padding": 250,
-  "autosize": "none",
+  "width": 400,
+  "height": 400,
+  "padding": { "left": 0, "top": 0, "bottom": 0 },
+  "autosize": "pad",
+  "signals": [
+    {
+      "name": "clear",
+      "value": true,
+      "on": [
+        {
+          "events": "pointerup[!event.item]",
+          "update": "true",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "shift",
+      "value": false,
+      "on": [
+        {
+          "events": "@legendSymbol:click, @legendLabel:click, @bubble:click",
+          "update": "event.shiftKey",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "clicked",
+      "value": null,
+      "on": [
+        {
+          "events": "@legendSymbol:click, @legendLabel:click, @bubble:click",
+          "update": "{value: datum.country}",
+          "force": true
+        }
+      ]
+    }
+  ],
   "data": [
     {
       "name": "table",
-      "url": "../Dataset/aggregated_weather.csv",
+      "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/aggregated_weather.csv",
       "format": {
         "type": "csv"
       }
+    },
+    {
+      "name": "selected",
+      "on": [
+        { "trigger": "clear", "remove": true },
+        { "trigger": "!shift", "remove": true },
+        { "trigger": "!shift && clicked", "insert": "clicked" },
+        { "trigger": "shift && clicked", "toggle": "clicked" }
+      ]
     }
   ],
   "scales": [
@@ -21,7 +65,7 @@
         "data": "table",
         "field": "air_quality_Carbon_Monoxide"
       },
-      "range": [50, 5000]
+      "range": [80, 8000]
     },
     {
       "name": "color",
@@ -33,9 +77,56 @@
       "range": ["#FAD5A5", "#FFA500", "#F08000", "#FF7518", "#8B4000"]
     }
   ],
+  "legends": [
+    {
+      "fill": "color",
+      "title": "Carbon Monoxide Level",
+      "encode": {
+        "symbols": {
+          "name": "legendSymbol",
+          "interactive": true,
+          "update": {
+            "opacity": [
+              {
+                "test": "!length(data('selected')) || indata('selected', 'value', datum.value)",
+                "value": 1.0
+              },
+              { "value": 0.15 }
+            ]
+          }
+        },
+        "labels": {
+          "name": "legendLabel",
+          "interactive": true,
+          "update": {
+            "opacity": [
+              {
+                "test": "!length(data('selected')) || indata('selected', 'value', datum.air_quality_Carbon_Monoxide)",
+                "value": 1
+              },
+              { "value": 0.25 }
+            ]
+          }
+        }
+      },
+      "orient": "top-right",
+      "titlePadding": 10,
+      "offset": -80
+    }
+  ],
   "marks": [
     {
       "type": "symbol",
+      "name": "bubble",
+      "update": {
+        "opacity": [
+          {
+            "test": "!length(data('selected')) || indata('selected', 'value', datum.value)",
+            "value": 1.0
+          },
+          { "value": 0.15 }
+        ]
+      },
       "from": {
         "data": "table"
       },
@@ -82,187 +173,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "text",
-      "name": "description",
-      "encode": {
-        "enter": {
-          "text": {
-            "value": "Carbon Monoxide Air Index by Country"
-          },
-          "fontSize": {
-            "value": 14
-          },
-          "align": {
-            "value": "center"
-          },
-          "baseline": {
-            "value": "top"
-          },
-          "fill": {
-            "value": "black"
-          }
-        },
-        "update": {
-          "x": {
-            "value": -10
-          },
-          "y": {
-            "value": -220
-          }
-        }
-      }
-    },
-    {
-      "type": "text",
-      "name": "Malaysia",
-      "encode": {
-        "enter": {
-          "text": {
-            "value": "Malaysia"
-          },
-          "fontSize": {
-            "value": 10
-          },
-          "fill": {
-            "value": "white"
-          }
-        },
-        "update": {
-          "x": {
-            "value": -142
-          },
-          "y": {
-            "value": 57
-          }
-        }
-      }
-    },
-    {
-      "type": "text",
-      "name": "Chile",
-      "encode": {
-        "enter": {
-          "text": {
-            "value": "Chile"
-          },
-          "fontSize": {
-            "value": 10
-          },
-          "fill": {
-            "value": "white"
-          }
-        },
-        "update": {
-          "x": {
-            "value": 75
-          },
-          "y": {
-            "value": 0
-          }
-        }
-      }
-    },
-    {
-      "type": "text",
-      "name": "Ethiopia",
-      "encode": {
-        "enter": {
-          "text": {
-            "value": "Ethiopia"
-          },
-          "fontSize": {
-            "value": 10
-          },
-          "fill": {
-            "value": "white"
-          }
-        },
-        "update": {
-          "x": {
-            "value": -88
-          },
-          "y": {
-            "value": -75
-          }
-        }
-      }
-    },
-    {
-      "type": "text",
-      "name": "Indonesia",
-      "encode": {
-        "enter": {
-          "text": {
-            "value": "Indonesia"
-          },
-          "fontSize": {
-            "value": 10
-          },
-          "fill": {
-            "value": "white"
-          }
-        },
-        "update": {
-          "x": {
-            "value": -15
-          },
-          "y": {
-            "value": 130
-          }
-        }
-      }
-    },
-    {
-      "type": "text",
-      "name": "China",
-      "encode": {
-        "enter": {
-          "text": {
-            "value": "China"
-          },
-          "fontSize": {
-            "value": 10
-          },
-          "fill": {
-            "value": "white"
-          }
-        },
-        "update": {
-          "x": {
-            "value": -51
-          },
-          "y": {
-            "value": 52
-          }
-        }
-      }
-    },
-    {
-      "type": "text",
-      "name": "Ecuador",
-      "encode": {
-        "enter": {
-          "text": {
-            "value": "Ecuador"
-          },
-          "fontSize": {
-            "value": 10
-          },
-          "fill": {
-            "value": "white"
-          }
-        },
-        "update": {
-          "x": {
-            "value": -72
-          },
-          "y": {
-            "value": 97
-          }
-        }
-      }
     }
   ]
 }

@@ -1,0 +1,300 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 400,
+  "height": 400,
+  "padding": {
+    "left": 320,
+    "top": 250,
+    "bottom": 0
+  },
+  "autosize": "none",
+  "data": [
+    {
+      "name": "table",
+      "url": "../Dataset/aggregated_weather.csv",
+      "format": {
+        "type": "csv"
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "size",
+      "type": "linear",
+      "domain": {
+        "data": "table",
+        "field": "air_quality_Carbon_Monoxide"
+      },
+      "range": [
+        80,
+        8000
+      ]
+    },
+    {
+      "name": "color",
+      "type": "sequential",
+      "domain": {
+        "data": "table",
+        "field": "air_quality_Carbon_Monoxide"
+      },
+      "range": [
+        "#FAD5A5",
+        "#FFA500",
+        "#F08000",
+        "#FF7518",
+        "#8B4000"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "selectedCountry",
+      "value": null,
+      "on": [
+        {
+          "events": "symbol:click",
+          "update": "datum.country"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "from": {
+        "data": "table"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "tooltip": {
+            "signal": "{'Country': datum.country, 'Carbon Monoxide Level': datum.air_quality_Carbon_Monoxide}"
+          }
+        },
+        "update": {
+          "size": {
+            "field": "air_quality_Carbon_Monoxide",
+            "scale": "size"
+          },
+          "fill": {
+            "field": "air_quality_Carbon_Monoxide",
+            "scale": "color"
+          },
+          "stroke": {
+            "value": "white"
+          },
+          "strokeWidth": {
+            "value": 1
+          },
+          "opacity": {
+            "value": 0.7,
+            "condition": {
+              "test": "datum.country === selectedCountry",
+              "value": 1
+            }
+          }
+        }
+      },
+      "transform": [
+        {
+          "type": "force",
+          "static": true,
+          "forces": [
+            {
+              "force": "collide",
+              "radius": {
+                "expr": "sqrt(datum.size) / 2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "description",
+      "encode": {
+        "enter": {
+          "text": {
+            "value": "Carbon Monoxide Air Index by Country"
+          },
+          "fontSize": {
+            "value": 14
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "top"
+          },
+          "fill": {
+            "value": "black"
+          }
+        },
+        "update": {
+          "x": {
+            "value": -10
+          },
+          "y": {
+            "value": -220
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "Malaysia",
+      "encode": {
+        "enter": {
+          "text": {
+            "value": "Malaysia"
+          },
+          "fontSize": {
+            "value": 10
+          },
+          "fill": {
+            "value": "white"
+          }
+        },
+        "update": {
+          "x": {
+            "value": -142
+          },
+          "y": {
+            "value": 57
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "Chile",
+      "encode": {
+        "enter": {
+          "text": {
+            "value": "Chile"
+          },
+          "fontSize": {
+            "value": 10
+          },
+          "fill": {
+            "value": "white"
+          }
+        },
+        "update": {
+          "x": {
+            "value": 75
+          },
+          "y": {
+            "value": 0
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "Ethiopia",
+      "encode": {
+        "enter": {
+          "text": {
+            "value": "Ethiopia"
+          },
+          "fontSize": {
+            "value": 10
+          },
+          "fill": {
+            "value": "white"
+          }
+        },
+        "update": {
+          "x": {
+            "value": -88
+          },
+          "y": {
+            "value": -75
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "Indonesia",
+      "encode": {
+        "enter": {
+          "text": {
+            "value": "Indonesia"
+          },
+          "fontSize": {
+            "value": 10
+          },
+          "fill": {
+            "value": "white"
+          }
+        },
+        "update": {
+          "x": {
+            "value": -15
+          },
+          "y": {
+            "value": 130
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "China",
+      "encode": {
+        "enter": {
+          "text": {
+            "value": "China"
+          },
+          "fontSize": {
+            "value": 10
+          },
+          "fill": {
+            "value": "white"
+          }
+        },
+        "update": {
+          "x": {
+            "value": -51
+          },
+          "y": {
+            "value": 52
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "Ecuador",
+      "encode": {
+        "enter": {
+          "text": {
+            "value": "Ecuador"
+          },
+          "fontSize": {
+            "value": 10
+          },
+          "fill": {
+            "value": "white"
+          }
+        },
+        "update": {
+          "x": {
+            "value": -72
+          },
+          "y": {
+            "value": 97
+          }
+        }
+      }
+    }
+  ]
+}

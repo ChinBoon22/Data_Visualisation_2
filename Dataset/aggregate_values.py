@@ -38,4 +38,4 @@ aggregated_df_time[['gust_mph', 'visibility_km',
 
 # Now, filtered_df contains only rows where "wind_direction" is one of the specified values
 # Save the aggregated data to a new CSV file
-aggregated_df_time.to_csv('6_top_20_ozone_country.csv', index=False)
+aggregated_df_time.to_csv('2_wind_data.csv', index=False)
