@@ -33,7 +33,7 @@
       "on": [
         {
           "events": "@legendSymbol:click, @legendLabel:click, @bubble:click",
-          "update": "!(clicked.counter >1) && clicked.clicked!==true?{value: datum.country, counter:datum.country===clicked.country ?clicked.counter+1:1, clicked:clicked.counter%2===0||datum.country!==clicked.country? true:false}:false",
+          "update": "!(clicked.counter >1) && clicked.clicked!==true?{value: datum.country, air_quality_condition: datum.air_quality_condition, health_risk: datum.human_health_risk, remarks: datum.remarks, counter:datum.country===clicked.country ?clicked.counter+1:1, clicked:clicked.counter%2===0||datum.country!==clicked.country? true:false}:false",
           "force": false
         }
       ]
@@ -41,7 +41,38 @@
     {
       "name": "title",
       "value": "U.S. Airports, 2008",
-      "update": "clicked ? clicked.value : 'Country'"
+      "update": "clicked ? clicked.value : ''"
+    },
+    {
+      "name": "air_quality_condition",
+      "value": "None",
+      "update": "clicked ? clicked.air_quality_condition : ''"
+    },
+    {
+      "name": "health_risk",
+      "value": "None",
+      "update": "clicked ? clicked.health_risk : ''"
+    },
+    {
+      "name": "remarks",
+      "value": "None",
+      "update": "clicked ? clicked.remarks : ''"
+    },
+    {
+      "name": "country_title",
+      "value": "Country: "
+    },
+    {
+      "name": "air_quality_condition_title",
+      "value": "Air Quality: "
+    },
+    {
+      "name": "health_risk_title",
+      "value": "Health Risk: "
+    },
+    {
+      "name": "remarks_title",
+      "value": "Remarks: "
     },
     {
       "name": "w",
@@ -67,7 +98,7 @@
   "data": [
     {
       "name": "table",
-      "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/aggregated_weather.csv",
+      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/aggregated_weather3.csv",
       "format": {
         "type": "csv"
       }
@@ -211,7 +242,7 @@
         "update": {
           "x": { "offset": 300 },
           "y": { "offset": -220 },
-          "width": { "value": 202 },
+          "width": { "value": 302 },
           "height": { "value": 102 },
           "opacity": { "value": 1 },
           "cornerRadius": { "signal": "cornerRadius" },
@@ -238,7 +269,7 @@
         "update": {
           "x": { "offset": 300 },
           "y": { "offset": -220 },
-          "width": { "value": 200 },
+          "width": { "value": 300 },
           "height": { "value": 100 },
           "opacity": { "value": 1 },
           "cornerRadius": { "signal": "cornerRadius" },
@@ -264,10 +295,114 @@
           "y": { "value": -195 },
           "fill": { "value": "black" },
           "fontSize": { "value": 15 },
-          "align": { "value": "right" }
+          "align": { "value": "left" }
         },
         "update": {
           "text": { "signal": "title" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "signal": "width", "offset": 20 },
+          "y": { "value": -175 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "left" }
+        },
+        "update": {
+          "text": { "signal": "air_quality_condition" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "signal": "width", "offset": 20 },
+          "y": { "value": -155 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "left" }
+        },
+        "update": {
+          "text": { "signal": "health_risk" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "signal": "width", "offset": 20 },
+          "y": { "value": -135 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "left" }
+        },
+        "update": {
+          "text": { "signal": "remarks" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "signal": "width", "offset": -88 },
+          "y": { "value": -195 },
+          "fill": { "value": "#36454F" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "left" },
+          "text": { "signal": "country_title" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "signal": "width", "offset": -88 },
+          "y": { "value": -175 },
+          "fill": { "value": "#36454F" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "left" },
+          "text": { "signal": "air_quality_condition_title" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "signal": "width", "offset": -88 },
+          "y": { "value": -155 },
+          "fill": { "value": "#36454F" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "left" },
+          "text": { "signal": "health_risk_title" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "signal": "width", "offset": -88 },
+          "y": { "value": -135 },
+          "fill": { "value": "#36454F" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "left" },
+          "text": { "signal": "remarks_title" }
         }
       }
     }
