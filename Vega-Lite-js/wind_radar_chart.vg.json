@@ -3,15 +3,74 @@
   "description": "A radar chart example, showing multiple dimensions in a radial layout.",
   "width": 500,
   "height": 500,
-  "padding": { "bottom": 40, "top": 20, "left": 20 },
-  "autosize": { "type": "none", "contains": "padding" },
+  "padding": { "bottom": 0, "top": -200, "left": -150, "right": 200 },
+  "autosize": { "type": "pad" },
 
-  "signals": [{ "name": "radius", "update": "width / 2" }],
+  "signals": [
+    { "name": "radius", "update": "width / 2 - 20" },
+    {
+      "name": "tooltip",
+      "value": {},
+      "on": [
+        {
+          "events": "@category-point:mouseover",
+          "update": "datum"
+        },
+        {
+          "events": "@category-point:mouseout",
+          "update": "{}"
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "value": true,
+      "on": [
+        {
+          "events": "mouseup[!event.item]",
+          "update": "true",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "shift",
+      "value": false,
+      "on": [
+        {
+          "events": "@legendSymbol:click, @legendLabel:click",
+          "update": "event.shiftKey",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "clicked",
+      "value": { "value": null, "counter": 0, "clicked": false },
+      "on": [
+        {
+          "events": "@legendSymbol:click, @legendLabel:click",
+          "update": "!(clicked.counter >1) && clicked.clicked!==true?{value: datum.value, counter:datum.value===clicked.value ?clicked.counter+1:1, clicked:clicked.counter%2===0||datum.value!==clicked.value? true:false}:false",
+          "force": false
+        }
+      ]
+    },
+    {
+      "name": "clickedEvent",
+      "value": false,
+      "on": [
+        {
+          "events": "@legendSymbol:click, @legendLabel:click,mouseup[!event.item]",
+          "update": "!clickedEvent"
+        }
+      ]
+    }
+  ],
 
   "data": [
     {
       "name": "table",
-      "url": "../Dataset/2_wind_data.csv",
+      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/2_wind_data.csv",
       "format": {
         "type": "csv"
       }
@@ -25,9 +84,92 @@
           "groupby": ["wind_direction"]
         }
       ]
+    },
+    {
+      "name": "selected",
+      "on": [
+        {
+          "trigger": "clear",
+          "remove": true
+        },
+        {
+          "trigger": "!shift",
+          "remove": true
+        },
+        {
+          "trigger": "!shift && clicked",
+          "insert": "clicked"
+        },
+        {
+          "trigger": "shift && clicked",
+          "toggle": "clicked"
+        }
+      ]
     }
   ],
-
+  "legends": [
+    {
+      "fill": "color",
+      "title": "Continents",
+      "orient": "none",
+      "legendX": 330,
+      "legendY": -150,
+      "direction": "vertical",
+      "aria": true,
+      "description": "Continents",
+      "labelColor": { "value": "color" },
+      "encode": {
+        "gradient": {
+          "name": "legendgr",
+          "interactive": true,
+          "gradientLength": { "value": 30 },
+          "gradientThickness": { "value": 10 },
+          "update": {
+            "gradientStrokeColor": {
+              "value": "color"
+            },
+            "gradientStrokeWidth": {
+              "value": 20
+            },
+            "gradientOpacity": [
+              {
+                "test": "!length(data('selected')) || indata('selected', 'value', datum.value)",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "labels": {
+          "name": "legendLabel",
+          "interactive": true,
+          "update": {
+            "labelColor": [
+              {
+                "test": "!length(data('selected')) || indata('selected', 'value', datum.value)",
+                "value": "color"
+              },
+              {
+                "fill": "black"
+              }
+            ],
+            "rect": { "width": 40, "height": 30 },
+            "text": {
+              "field": "value"
+            },
+            "opacity": [
+              {
+                "test": "indata('selected', 'value', datum.value)",
+                "value": 1
+              },
+              {
+                "value": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
   "scales": [
     {
       "name": "angular",
@@ -83,7 +225,7 @@
           "name": "category-line",
           "from": { "data": "facet" },
           "encode": {
-            "enter": {
+            "update": {
               "interpolate": { "value": "linear-closed" },
               "x": {
                 "signal": "scale('radial', datum.wind_mph) * cos(scale('angular', datum.wind_direction) + (PI/7.8))"
@@ -92,10 +234,82 @@
                 "signal": "scale('radial', datum.wind_mph) * sin(scale('angular', datum.wind_direction) + (PI/7.8))"
               },
               "stroke": { "scale": "color", "field": "continent" },
-              "strokeWidth": { "value": 1 },
+              "strokeWidth": [
+                {
+                  "test": "(!length(data('selected')) || (indata('selected', 'value', null)) || (indata('selected', 'value', datum.continent)))",
+                  "value": 1
+                },
+                {
+                  "value": 0
+                }
+              ],
               "fill": { "scale": "color", "field": "continent" },
-              "fillOpacity": { "value": 0.1 }
+              "fillOpacity": [
+                {
+                  "test": "((indata('selected', 'value', datum.continent)))",
+                  "value": 0.6
+                },
+                {
+                  "value": 0.1
+                }
+              ]
             }
+          }
+        },
+        {
+          "type": "symbol",
+          "name": "category-point",
+          "from": {
+            "data": "facet"
+          },
+          "encode": {
+            "enter": {
+              "x": {
+                "signal": "scale('radial', datum.wind_mph) * cos(scale('angular', datum.wind_direction) + (PI/7.8))"
+              },
+              "y": {
+                "signal": "scale('radial', datum.wind_mph) * sin(scale('angular', datum.wind_direction) + (PI/7.8))"
+              },
+              "tooltip": {
+                "signal": "{'Continent: ': datum.continent, 'Wind Speed (mph): ': datum.wind_mph, 'Direction: ': datum.wind_direction}"
+              },
+              "fill": {
+                "scale": "color",
+                "field": "continent"
+              },
+              "fillOpacity": {
+                "value": 0
+              },
+              "zindex": {
+                "value": 1
+              }
+            }
+          },
+          "update": {
+            "x": {
+              "signal": "scale('radial', datum.wind_mph) * cos(scale('angular', datum.wind_direction) + (PI/7.8))"
+            },
+            "y": {
+              "signal": "scale('radial', datum.wind_mph) * sin(scale('angular', datum.wind_direction) + (PI/7.8))"
+            },
+            "align": {
+              "value": "center"
+            },
+            "baseline": {
+              "value": "middle"
+            },
+            "zindex": {
+              "value": 2
+            },
+            "fillOpacity": [
+              {
+                "test": "datum === tooltip",
+                "value": 0
+              },
+              {
+                "value": 1
+              }
+            ]
           }
         }
       ]

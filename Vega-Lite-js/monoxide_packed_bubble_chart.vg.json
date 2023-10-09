@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "width": 400,
   "height": 400,
-  "padding": { "left": 0, "top": 0, "bottom": 0 },
+  "padding": { "left": 10, "top": 20, "bottom": 0 },
   "autosize": "pad",
   "signals": [
     {
@@ -29,14 +29,39 @@
     },
     {
       "name": "clicked",
-      "value": null,
+      "value": { "value": null, "counter": 0, "clicked": false },
       "on": [
         {
           "events": "@legendSymbol:click, @legendLabel:click, @bubble:click",
-          "update": "{value: datum.country}",
-          "force": true
+          "update": "!(clicked.counter >1) && clicked.clicked!==true?{value: datum.country, counter:datum.country===clicked.country ?clicked.counter+1:1, clicked:clicked.counter%2===0||datum.country!==clicked.country? true:false}:false",
+          "force": false
         }
       ]
+    },
+    {
+      "name": "title",
+      "value": "U.S. Airports, 2008",
+      "update": "clicked ? clicked.value : 'Country'"
+    },
+    {
+      "name": "w",
+      "value": 100
+    },
+    {
+      "name": "h",
+      "value": 100
+    },
+    {
+      "name": "cornerRadius",
+      "value": 0
+    },
+    {
+      "name": "strokeWidth",
+      "value": 4
+    },
+    {
+      "name": "color",
+      "value": "both"
     }
   ],
   "data": [
@@ -75,38 +100,33 @@
         "field": "air_quality_Carbon_Monoxide"
       },
       "range": ["#FAD5A5", "#FFA500", "#F08000", "#FF7518", "#8B4000"]
+    },
+    {
+      "name": "text",
+      "type": "ordinal",
+      "domain": {
+        "data": "table",
+        "field": "country"
+      }
     }
   ],
   "legends": [
     {
       "fill": "color",
+      "size": "size",
+      "clipHeight": 16,
       "title": "Carbon Monoxide Level",
       "encode": {
         "symbols": {
           "name": "legendSymbol",
-          "interactive": true,
-          "update": {
-            "opacity": [
-              {
-                "test": "!length(data('selected')) || indata('selected', 'value', datum.value)",
-                "value": 1.0
-              },
-              { "value": 0.15 }
-            ]
-          }
+          "interactive": true
         },
         "labels": {
           "name": "legendLabel",
-          "interactive": true,
-          "update": {
-            "opacity": [
-              {
-                "test": "!length(data('selected')) || indata('selected', 'value', datum.air_quality_Carbon_Monoxide)",
-                "value": 1
-              },
-              { "value": 0.25 }
-            ]
-          }
+          "text": {
+            "field": "value"
+          },
+          "interactive": true
         }
       },
       "orient": "top-right",
@@ -118,15 +138,6 @@
     {
       "type": "symbol",
       "name": "bubble",
-      "update": {
-        "opacity": [
-          {
-            "test": "!length(data('selected')) || indata('selected', 'value', datum.value)",
-            "value": 1.0
-          },
-          { "value": 0.15 }
-        ]
-      },
       "from": {
         "data": "table"
       },
@@ -151,12 +162,29 @@
             "field": "air_quality_Carbon_Monoxide",
             "scale": "color"
           },
-          "stroke": {
-            "value": "white"
-          },
+          "stroke": [
+            {
+              "test": "((indata('selected', 'value', datum.country)))",
+              "value": "black",
+              "zindex": 10
+            },
+            {
+              "value": "white"
+            }
+          ],
+
           "strokeWidth": {
             "value": 1
-          }
+          },
+          "fillOpacity": [
+            {
+              "test": "((indata('selected', 'value', datum.country)))",
+              "value": 1.0
+            },
+            {
+              "value": 1.0
+            }
+          ]
         }
       },
       "transform": [
@@ -173,6 +201,75 @@
           ]
         }
       ]
+    },
+    {
+      "type": "rect",
+      "encode": {
+        "enter": {
+          "stroke": { "value": "grey" }
+        },
+        "update": {
+          "x": { "offset": 300 },
+          "y": { "offset": -220 },
+          "width": { "value": 202 },
+          "height": { "value": 102 },
+          "opacity": { "value": 1 },
+          "cornerRadius": { "signal": "cornerRadius" },
+          "strokeWidth": { "value": 2 },
+          "fillOpacity": {
+            "signal": "color === 'fill' || color === 'both' ? 1 : 0"
+          },
+          "strokeOpacity": {
+            "signal": "color === 'stroke' || color === 'both' ? 1 : 0"
+          }
+        },
+        "hover": {
+          "opacity": { "value": 0.5 }
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "encode": {
+        "enter": {
+          "fill": { "value": "white" },
+          "stroke": { "value": "#652c90" }
+        },
+        "update": {
+          "x": { "offset": 300 },
+          "y": { "offset": -220 },
+          "width": { "value": 200 },
+          "height": { "value": 100 },
+          "opacity": { "value": 1 },
+          "cornerRadius": { "signal": "cornerRadius" },
+          "strokeWidth": { "value": 2 },
+          "fillOpacity": {
+            "signal": "color === 'fill' || color === 'both' ? 1 : 0"
+          },
+          "strokeOpacity": {
+            "signal": "color === 'stroke' || color === 'both' ? 1 : 0"
+          }
+        },
+        "hover": {
+          "opacity": { "value": 0.5 }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "signal": "width", "offset": 20 },
+          "y": { "value": -195 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "right" }
+        },
+        "update": {
+          "text": { "signal": "title" }
+        }
+      }
     }
   ]
 }
