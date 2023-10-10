@@ -33,7 +33,7 @@
       "on": [
         {
           "events": "@legendSymbol:click, @legendLabel:click, @bubble:click",
-          "update": "!(clicked.counter >1) && clicked.clicked!==true?{value: datum.country, air_quality_condition: datum.air_quality_condition, health_risk: datum.human_health_risk, remarks: datum.remarks, counter:datum.country===clicked.country ?clicked.counter+1:1, clicked:clicked.counter%2===0||datum.country!==clicked.country? true:false}:false",
+          "update": "!(clicked.counter >1) && clicked.clicked!==true?{value: datum.country, air_quality_condition: datum.air_quality_condition, health_risk: datum.human_health_risk, remarks: datum.remark, counter:datum.country===clicked.country ?clicked.counter+1:1, clicked:clicked.counter%2===0||datum.country!==clicked.country? true:false}:false",
           "force": false
         }
       ]
@@ -98,7 +98,7 @@
   "data": [
     {
       "name": "table",
-      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/aggregated_weather3.csv",
+      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/aggregated_weather4.csv",
       "format": {
         "type": "csv"
       }
@@ -403,6 +403,370 @@
           "fontSize": { "value": 15 },
           "align": { "value": "left" },
           "text": { "signal": "remarks_title" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 125 },
+          "y": { "value": -10 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "center" },
+          "text": { "value": "Chile" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 125 },
+          "y": { "value": 8 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "center" },
+          "text": { "value": "4281.36" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -177 },
+          "y": { "value": 52 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "center" },
+          "text": { "value": "Malaysia" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -177 },
+          "y": { "value": 70 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 15 },
+          "align": { "value": "center" },
+          "text": { "value": "4163.43" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -82 },
+          "y": { "value": -110 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "Ethiopia" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -82 },
+          "y": { "value": -95 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "2039.99" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 20 },
+          "y": { "value": 169 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 14 },
+          "align": { "value": "center" },
+          "text": { "value": "Indonesia" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 20 },
+          "y": { "value": 187 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 14 },
+          "align": { "value": "center" },
+          "text": { "value": "3596.97" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -105 },
+          "y": { "value": 110 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 12 },
+          "align": { "value": "center" },
+          "text": { "value": "Ecuador" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -105 },
+          "y": { "value": 125 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 12 },
+          "align": { "value": "center" },
+          "text": { "value": "2227.47" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -55 },
+          "y": { "value": 55 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "China" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -55 },
+          "y": { "value": 69 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "1655.58" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 12 },
+          "y": { "value": -2 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 9 },
+          "align": { "value": "center" },
+          "text": { "value": "Burundi" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -186 },
+          "y": { "value": -76 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "Nepal" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -186 },
+          "y": { "value": -61 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "1555.46" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -60 },
+          "y": { "value": 222 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "Zambia" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -218 },
+          "y": { "value": -26 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "Vietnam" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -117 },
+          "y": { "value": -50 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 10 },
+          "align": { "value": "center" },
+          "text": { "value": "Jamaica" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 108 },
+          "y": { "value": 150 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 12 },
+          "align": { "value": "center" },
+          "text": { "value": "Mali" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 123 },
+          "y": { "value": -120 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "India" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 123 },
+          "y": { "value": -108 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 10 },
+          "align": { "value": "center" },
+          "text": { "value": "1177.43" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -15 },
+          "y": { "value": -190 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 10 },
+          "align": { "value": "center" },
+          "text": { "value": "Panama" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 15 },
+          "y": { "value": -137 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 10 },
+          "align": { "value": "center" },
+          "text": { "value": "France" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -136 },
+          "y": { "value": -160 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 9 },
+          "align": { "value": "center" },
+          "text": { "value": "Thailand" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -97 },
+          "y": { "value": -160 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 11 },
+          "align": { "value": "center" },
+          "text": { "value": "Iran" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 211 },
+          "y": { "value": -26 },
+          "fill": { "value": "white" },
+          "fontSize": { "value": 10 },
+          "align": { "value": "center" },
+          "text": { "value": "Pakistan" }
         }
       }
     }
