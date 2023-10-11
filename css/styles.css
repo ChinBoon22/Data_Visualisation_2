@@ -1,0 +1,123 @@
+/* Style the body and set a background color */
+body {
+    font-family: 'Open Sans', sans-serif; /* Use the Google font */
+    background-color: #f5f5f5; /* Light gray background */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Center-align the page content */
+  .page {
+    max-width: 1100px; /* Adjust the maximum width as needed */
+    margin-left: 60px;
+    margin-right: 40px;
+    padding: 30px;
+    background-color: #fff; /* White background for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Style the heading */
+  h1 {
+    font-size: 24px;
+    color: Black; /* Dark text color */
+    text-align: center; 
+  }
+  
+  /* Style the introduction paragraph */
+  p {
+    font-size: 16px;
+    color: #333; /* Slightly darker text color */
+    line-height: 1.5; /* Increase line spacing for readability */
+  }
+  
+  /* Style the small-font class for attribution */
+  .small-font {
+    font-size: 12px;
+    color: #777; /* Light gray text color */
+  }
+  
+/* Style the vis-container for the visualization */
+  .vis-container1 {
+    margin-top: 20px; /* Add some spacing between visualizations */
+    margin-left: 50px;
+    border: 1px solid #ddd; /* Add a border around the visualization */
+    background-color: #fff; /* White background for visualizations */
+    padding: 20px; /* Add padding to the visualization container */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.vis-container2 {
+    margin-top: 30px; /* Add some spacing between visualizations */
+    margin-left: 10px;
+}
+
+.description-right{
+    margin-top: 50px; /* Add some spacing between visualizations */
+    margin-left: 35px;
+}
+
+.intro{
+    margin-left: 47px;
+    margin-right: 47px;
+    color: "black"; /* Light gray text color */
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the boxes */
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+}
+
+/* Style the boxes */
+.box {
+    flex: 1; /* Equal width for both boxes */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 10px; /* Add some spacing between the boxes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Style for the "Too Dry" box */
+.dry {
+    background-color: "white"; /* Customize the background color */
+}
+
+/* Style for the "Too Wet" box */
+.wet {
+    background-color: "white"; /* Customize the background color */
+}
+
+.icon {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 0px; /* Add spacing between the icon and text */
+}
+
+.radar-chart-left{
+    margin-top: 50px;
+}
+
+.aus {
+    flex: 1; /* Equal width for both boxes */
+    width: 10;
+    padding: 10px;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 50px; /* Add some spacing between the boxes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.monoxide_graph{
+    align-items: center;
+    text-align: center;
+}

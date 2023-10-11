@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap",
+  "data": {
+    "url": "../Dataset/6_top_20_ozone_country.csv"
+  },
+  "params": [{ "name": "highlight", "select": "point" }],
+  "width": 600,
+  "height": 300,
+  "title": "Top 20 Countries with Highest Ozone Index",
+  "layer": [
+    {
+      "mark": { "type": "rect", "tooltip": true },
+      "encoding": {
+        "x": {
+          "field": "last_updated_day",
+          "type": "ordinal",
+          "title": "Date",
+          "timeUnit": "binnedutcyearmonthdate"
+        },
+        "y": {
+          "field": "country",
+          "type": "ordinal",
+          "title": "Country"
+        },
+        "color": {
+          "field": "air_quality_Ozone",
+          "type": "quantitative",
+          "legend": {
+            "title": "Air Quality Ozone"
+          },
+          "scale": {
+            "range": ["#b3cde0", "#6497b1", "#005b96", "#03396c", "#011f4b"]
+          }
+        },
+        "stroke": {
+          "condition": {
+            "param": "highlight",
+            "empty": false,
+            "value": "black"
+          },
+          "value": null
+        },
+        "opacity": {
+          "condition": { "param": "highlight", "value": 1 },
+          "value": 1.0
+        },
+        "order": {
+          "condition": { "param": "highlight", "value": 1 },
+          "value": 0
+        },
+        "tooltip": [
+          { "field": "country", "type": "nominal", "title": "Country" },
+          { "field": "continent", "type": "nominal", "title": "Continent" },
+          {
+            "field": "air_quality_Ozone",
+            "type": "quantitative",
+            "title": "Ozone Index"
+          },
+          {
+            "field": "uv_index",
+            "type": "quantitative",
+            "title": "UV Index"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Global Average Temperature Distribution (29-08-2023 - 13-09-2023)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/aggregated_weather4.csv"
+  },
+  "vocncat": [
+    {
+      "width": 800,
+      "height": 400,
+      "padding": 0,
+      "params": [
+        {
+          "name": "zoom_level",
+          "value": 125,
+          "bind": {
+            "input": "range",
+            "min": 100,
+            "max": 1000,
+            "step": 25,
+            "name": "Zoom: "
+          }
+        },
+        {
+          "name": "center_to",
+          "value": [10.082, 8.6753],
+          "bind": {
+            "input": "select",
+            "options": [
+              [10.082, 8.6753],
+              [-101.09, 50.71],
+              [46.6, -20.49],
+              [-48.082, -10.6753],
+              [115.082, 35.6753],
+              [140.082, -25.6753]
+            ],
+            "labels": [
+              "Nigeria",
+              "USA",
+              "Madagascar",
+              "Brazil",
+              "China",
+              "Australia"
+            ],
+            "name": "Map Centre: "
+          }
+        }
+      ],
+      "projection": {
+        "type": "equalEarth",
+        "center": { "expr": "center_to" },
+        "scale": { "expr": "zoom_level" }
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/ne_110m.json",
+            "format": {
+              "type": "topojson",
+              "feature": "ne_110m_admin_0_countries"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "stroke": "white",
+            "strokeDash": [1, 1],
+            "fill": "#D3D3D3"
+          },
+          "encoding": {
+            "color": {
+              "value": "#D3D3D3"
+            }
+          }
+        },
+
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+            "format": { "type": "topojson", "feature": "oceans" }
+          },
+          "mark": { "type": "geoshape", "fill": "#A7C7E7" }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/ne_110m.json",
+            "format": {
+              "type": "topojson",
+              "feature": "ne_110m_admin_0_countries"
+            }
+          },
+          "transform": [
+            {
+              "lookup": "properties.NAME",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/aggregated_temperature.csv"
+                },
+                "key": "country",
+                "fields": ["temperature_celsius"]
+              }
+            }
+          ],
+          "mark": { "type": "geoshape" },
+          "encoding": {
+            "color": {
+              "field": "temperature_celsius",
+              "type": "quantitative",
+              "scale": {
+                "type": "linear",
+                "domain": [10, 12, 13, 14, 15, 17, 20, 23, 32],
+                "range": [
+                  "#FFBF00",
+                  "#F4BB44",
+                  "#FF9B50",
+                  "#FF7F34",
+                  "#fe7f4e",
+                  "#FF4500",
+                  "#FF4433",
+                  "#E41B17",
+                  "#600000"
+                ]
+              },
+              "title": "Average Temperature (°C)"
+            },
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "type": "nominal",
+                "title": "Country"
+              },
+              {
+                "field": "temperature_celsius",
+                "type": "quantitative",
+                "title": "Average Temperature (°C)"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/ne_110m.json",
+            "format": { "type": "topojson", "feature": "ne_110m_graticules_30" }
+          },
+          "mark": {
+            "type": "geoshape",
+            "stroke": "white",
+            "strokeDash": [1, 1],
+            "fill": null
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "country": "United States",
+                "latitude": 43.6,
+                "longitude": -110.49,
+                "label": "USA"
+              },
+              {
+                "country": "Australia",
+                "latitude": -20.28,
+                "longitude": 122.22,
+                "label": "Australia"
+              },
+              {
+                "country": "China",
+                "latitude": 39.93,
+                "longitude": 100.39,
+                "label": "China"
+              },
+              {
+                "country": "Brazil",
+                "latitude": -4.08,
+                "longitude": -58.17,
+                "label": "Brazil"
+              },
+              {
+                "country": "India",
+                "latitude": 28.6,
+                "longitude": 75.2,
+                "label": "India"
+              },
+              {
+                "country": "Russia",
+                "latitude": 71.7,
+                "longitude": 94.45,
+                "label": "Russia"
+              },
+              {
+                "country": "Algeria",
+                "latitude": 32.76,
+                "longitude": -8.05,
+                "label": "Algeria"
+              },
+              {
+                "country": "Canada",
+                "latitude": 60.42,
+                "longitude": -125.7,
+                "label": "Canada"
+              },
+              {
+                "country": "Madagascar",
+                "latitude": -20,
+                "longitude": 43.49,
+                "label": "Madagascar"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 0,
+            "dy": 13,
+            "fontSize": 11,
+            "fill": "white"
+          },
+          "encoding": {
+            "longitude": { "field": "longitude", "type": "quantitative" },
+            "latitude": { "field": "latitude", "type": "quantitative" },
+            "text": { "field": "label", "type": "nominal" }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "value": "Brazil",
+                "latitude": -40.08,
+                "longitude": -130.17,
+                "label": "In spring, days become longer in Brazil."
+              },
+              {
+                "country": "Australia",
+                "latitude": -35.28,
+                "longitude": 80.22,
+                "label": "Inland areas in Australia"
+              },
+              {
+                "country": "Australia2",
+                "latitude": -40.28,
+                "longitude": 80.22,
+                "label": " experience cold air masses."
+              },
+              {
+                "country": "USA",
+                "latitude": 25.6,
+                "longitude": -179.49,
+                "label": "At the end of August, "
+              },
+              {
+                "country": "USA2",
+                "latitude": 20.6,
+                "longitude": -179.49,
+                "label": "USA transitions to autumn (cooler). "
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 0,
+            "dy": 13,
+            "fontSize": 10,
+            "fill": "black"
+          },
+          "encoding": {
+            "longitude": { "field": "longitude", "type": "quantitative" },
+            "latitude": { "field": "latitude", "type": "quantitative" },
+            "text": { "field": "label", "type": "nominal" }
+          }
+        }
+      ]
+    },
+
+    {
+      "selection": {
+        "continent_highlight": {
+          "type": "multi",
+          "fields": ["continent"],
+          "bind": "legend"
+        }
+      },
+      "mark": {
+        "type": "circle",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "humidity",
+          "type": "quantitative",
+          "title": "Humidity (%)"
+        },
+        "y": {
+          "field": "cloud",
+          "type": "quantitative",
+          "title": "Cloud Cover (%)"
+        },
+        "size": {
+          "field": "precip_mm",
+          "type": "quantitative",
+          "title": "Precipitation (mm)",
+          "scale": { "range": [100, 2000] }
+        },
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "title": "Continent",
+          "scale": {
+            "domain": [
+              "Africa",
+              "America",
+              "Asia",
+              "Atlantic",
+              "Australia",
+              "Europe",
+              "Indian",
+              "Pacific"
+            ],
+            "range": [
+              "#e41a1c",
+              "#7D3C98",
+              "#F57C00",
+              "#D4AC0D",
+              "#37474F",
+              "#377eb8",
+              "#922B21",
+              "#FF69B4"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": { "selection": "continent_highlight", "value": 0.55 },
+          "value": 0.2
+        },
+        "tooltip": [
+          { "field": "country", "type": "nominal", "title": "Country" },
+          { "field": "continent", "type": "nominal", "title": "Continent" },
+          {
+            "field": "humidity",
+            "type": "quantitative",
+            "title": "Humidity (%)"
+          },
+          {
+            "field": "cloud",
+            "type": "quantitative",
+            "title": "Cloud Cover (%)"
+          },
+          {
+            "field": "precip_mm",
+            "type": "quantitative",
+            "title": "Precipitation (mm)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -30,
+        "dy": 45,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Paraguay'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -100,
+        "dy": 80,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Iran'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 5,
+        "dy": -120,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Mexico'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 33,
+        "dy": -40,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Ecuador'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 85,
+        "dy": -170,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "field": "country", "type": "nominal" },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Micronesia'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ]
+}

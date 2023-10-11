@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "width": 400,
   "height": 400,
-  "padding": { "left": 10, "top": 20, "bottom": 0 },
+  "padding": { "left": 10, "top": 0, "bottom": -120 },
   "autosize": "pad",
   "signals": [
     {
@@ -121,7 +121,7 @@
         "data": "table",
         "field": "air_quality_Carbon_Monoxide"
       },
-      "range": [80, 8000]
+      "range": [100, 10000]
     },
     {
       "name": "color",

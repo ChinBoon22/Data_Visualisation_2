@@ -6,7 +6,7 @@
   },
   "width": 600,
   "height": 300,
-  "title": "Air Quality Ozone for Top 20 Highest ",
+  "title": "Top 20 Countries with Highest UV Index",
   "mark": "rect",
   "encoding": {
     "x": {
@@ -21,13 +21,13 @@
       "title": "Country"
     },
     "color": {
-      "field": "air_quality_Ozone",
+      "field": "uv_index",
       "type": "quantitative",
       "legend": {
-        "title": "Air Quality Ozone"
+        "title": "UV Index"
       },
       "scale": {
-        "range": ["#b3cde0", "#6497b1", "#005b96", "#03396c", "#011f4b"]
+        "range": ["#7c3f00", "#633200", "#562b00", "#492201", "#3e1c00"]
       }
     }
   }

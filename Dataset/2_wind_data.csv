@@ -1,61 +1,61 @@
 continent,wind_direction,wind_mph,wind_kph,gust_mph,gust_kph
-Africa,NW,8.16,13.11,11.47,18.47
-Africa,N,2.83,4.6,9.21,14.83
-Africa,NE,5.6,9.0,8.3,13.38
-Africa,E,6.6,10.61,10.17,16.38
-Africa,SE,6.17,9.94,9.1,14.64
-Africa,S,8.29,13.35,13.55,21.8
-Africa,SW,8.08,12.98,11.96,19.24
-Africa,W,5.96,9.58,9.99,16.09
-America,NW,7.77,12.51,6.47,10.44
-America,N,4.54,7.33,8.98,14.46
-America,NE,7.38,11.89,11.46,18.43
-America,E,8.78,14.15,15.26,24.54
-America,SE,8.33,13.38,9.08,14.63
-America,S,8.0,12.87,9.19,14.79
-America,SW,6.04,9.68,7.28,11.7
-America,W,5.6,8.98,7.35,11.83
-Asia,NW,6.86,11.04,12.64,20.34
-Asia,N,4.24,6.85,7.77,12.51
-Asia,NE,4.93,7.93,8.58,13.82
-Asia,E,5.0,8.06,7.77,12.53
-Asia,SE,4.63,7.47,7.97,12.83
-Asia,S,5.7,9.16,8.75,14.09
-Asia,SW,5.71,9.17,8.26,13.3
-Asia,W,6.19,9.97,10.19,16.4
-Atlantic,NW,2.5,4.0,3.4,5.4
-Atlantic,N,10.23,16.47,15.03,24.23
-Atlantic,NE,4.3,6.8,10.7,17.3
-Atlantic,E,4.3,6.8,5.4,8.6
-Atlantic,SE,22.53,36.27,34.23,55.07
-Atlantic,S,12.2,19.6,21.6,34.75
-Atlantic,SW,17.27,27.83,29.0,46.67
-Atlantic,W,9.4,15.1,15.9,25.6
-Australia,NW,21.7,34.9,22.1,35.6
-Australia,N,6.85,10.95,5.35,8.65
-Australia,S,15.0,24.1,8.5,13.7
-Australia,SW,5.6,9.0,1.3,2.2
-Australia,W,14.3,23.05,15.0,24.1
-Europe,NW,5.38,8.66,9.08,14.63
-Europe,N,5.26,8.49,10.15,16.34
-Europe,NE,5.42,8.71,9.3,14.97
-Europe,E,4.51,7.26,9.19,14.79
-Europe,SE,5.33,8.55,8.61,13.85
-Europe,S,6.1,9.83,9.18,14.79
-Europe,SW,6.34,10.2,9.68,15.57
-Europe,W,5.28,8.48,8.3,13.34
-Indian,NW,6.53,10.4,10.8,17.4
-Indian,N,3.35,5.4,6.6,10.65
-Indian,NE,6.0,9.6,9.68,15.58
-Indian,E,6.92,11.12,10.86,17.5
-Indian,SE,10.21,16.43,15.65,25.2
-Indian,S,17.0,27.4,22.4,36.0
-Indian,W,15.2,24.5,24.23,39.03
-Pacific,NW,5.6,9.0,2.1,3.4
-Pacific,N,12.53,20.21,17.31,27.87
-Pacific,NE,9.44,15.2,14.82,23.82
-Pacific,E,11.89,19.15,22.05,35.48
-Pacific,SE,10.94,17.61,18.06,29.07
-Pacific,S,5.6,9.0,8.77,14.17
-Pacific,SW,6.43,10.33,14.77,23.75
-Pacific,W,10.23,16.47,18.8,30.23
+Africa,North West,8.16,13.11,11.47,18.47
+Africa,North,2.83,4.6,9.21,14.83
+Africa,North East,5.6,9.0,8.3,13.38
+Africa,East,6.6,10.61,10.17,16.38
+Africa,South East,6.17,9.94,9.1,14.64
+Africa,South,8.29,13.35,13.55,21.8
+Africa,South West,8.08,12.98,11.96,19.24
+Africa,West,5.96,9.58,9.99,16.09
+America,North West,7.77,12.51,6.47,10.44
+America,North,4.54,7.33,8.98,14.46
+America,North East,7.38,11.89,11.46,18.43
+America,East,8.78,14.15,15.26,24.54
+America,South East,8.33,13.38,9.08,14.63
+America,South,8.0,12.87,9.19,14.79
+America,South West,6.04,9.68,7.28,11.7
+America,West,5.6,8.98,7.35,11.83
+Asia,North West,6.86,11.04,12.64,20.34
+Asia,North,4.24,6.85,7.77,12.51
+Asia,North East,4.93,7.93,8.58,13.82
+Asia,East,5.0,8.06,7.77,12.53
+Asia,South East,4.63,7.47,7.97,12.83
+Asia,South,5.7,9.16,8.75,14.09
+Asia,South West,5.71,9.17,8.26,13.3
+Asia,West,6.19,9.97,10.19,16.4
+Atlantic,North West,2.5,4.0,3.4,5.4
+Atlantic,North,10.23,16.47,15.03,24.23
+Atlantic,North East,4.3,6.8,10.7,17.3
+Atlantic,East,4.3,6.8,5.4,8.6
+Atlantic,South East,22.53,36.27,34.23,55.07
+Atlantic,South,12.2,19.6,21.6,34.75
+Atlantic,South West,17.27,27.83,29.0,46.67
+Atlantic,West,9.4,15.1,15.9,25.6
+Australia,North West,21.7,34.9,22.1,35.6
+Australia,North,6.85,10.95,5.35,8.65
+Australia,South,15.0,24.1,8.5,13.7
+Australia,South West,5.6,9.0,1.3,2.2
+Australia,West,14.3,23.05,15.0,24.1
+Europe,North West,5.38,8.66,9.08,14.63
+Europe,North,5.26,8.49,10.15,16.34
+Europe,North East,5.42,8.71,9.3,14.97
+Europe,East,4.51,7.26,9.19,14.79
+Europe,South East,5.33,8.55,8.61,13.85
+Europe,South,6.1,9.83,9.18,14.79
+Europe,South West,6.34,10.2,9.68,15.57
+Europe,West,5.28,8.48,8.3,13.34
+Indian,North West,6.53,10.4,10.8,17.4
+Indian,North,3.35,5.4,6.6,10.65
+Indian,North East,6.0,9.6,9.68,15.58
+Indian,East,6.92,11.12,10.86,17.5
+Indian,South East,10.21,16.43,15.65,25.2
+Indian,South,17.0,27.4,22.4,36.0
+Indian,West,15.2,24.5,24.23,39.03
+Pacific,North West,5.6,9.0,2.1,3.4
+Pacific,North,12.53,20.21,17.31,27.87
+Pacific,North East,9.44,15.2,14.82,23.82
+Pacific,East,11.89,19.15,22.05,35.48
+Pacific,South East,10.94,17.61,18.06,29.07
+Pacific,South,5.6,9.0,8.77,14.17
+Pacific,South West,6.43,10.33,14.77,23.75
+Pacific,West,10.23,16.47,18.8,30.23

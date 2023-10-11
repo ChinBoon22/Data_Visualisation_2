@@ -4,7 +4,48 @@
   "width": 800,
   "height": 400,
   "padding": 0,
-  "projection": { "type": "equalEarth" },
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 125,
+      "bind": {
+        "input": "range",
+        "min": 100,
+        "max": 1000,
+        "step": 25,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [10.082, 8.6753],
+      "bind": {
+        "input": "select",
+        "options": [
+          [10.082, 8.6753],
+          [-101.09, 50.71],
+          [46.6, -20.49],
+          [-48.082, -10.6753],
+          [115.082, 35.6753],
+          [140.082, -25.6753]
+        ],
+        "labels": [
+          "Nigeria",
+          "USA",
+          "Madagascar",
+          "Brazil",
+          "China",
+          "Australia"
+        ],
+        "name": "Map Centre: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "equalEarth",
+    "center": { "expr": "center_to" },
+    "scale": { "expr": "zoom_level" }
+  },
   "layer": [
     {
       "data": {
@@ -148,6 +189,12 @@
             "latitude": 60.42,
             "longitude": -125.7,
             "label": "Canada"
+          },
+          {
+            "country": "Madagascar",
+            "latitude": -20,
+            "longitude": 43.49,
+            "label": "Madagascar"
           }
         ]
       },
@@ -157,8 +204,58 @@
         "baseline": "middle",
         "dx": 0,
         "dy": 13,
-        "fontSize": 12,
+        "fontSize": 11,
         "fill": "white"
+      },
+      "encoding": {
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "text": { "field": "label", "type": "nominal" }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "value": "Brazil",
+            "latitude": -40.08,
+            "longitude": -130.17,
+            "label": "In spring, days become longer in Brazil."
+          },
+          {
+            "country": "Australia",
+            "latitude": -35.28,
+            "longitude": 80.22,
+            "label": "Inland areas in Australia"
+          },
+          {
+            "country": "Australia2",
+            "latitude": -40.28,
+            "longitude": 80.22,
+            "label": " experience cold air masses."
+          },
+          {
+            "country": "USA",
+            "latitude": 25.6,
+            "longitude": -179.49,
+            "label": "At the end of August, "
+          },
+          {
+            "country": "USA2",
+            "latitude": 20.6,
+            "longitude": -179.49,
+            "label": "USA transitions to autumn (cooler). "
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 0,
+        "dy": 13,
+        "fontSize": 10,
+        "fill": "black"
       },
       "encoding": {
         "longitude": { "field": "longitude", "type": "quantitative" },

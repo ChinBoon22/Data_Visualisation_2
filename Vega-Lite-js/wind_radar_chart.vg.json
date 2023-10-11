@@ -3,9 +3,7 @@
   "description": "A radar chart example, showing multiple dimensions in a radial layout.",
   "width": 500,
   "height": 500,
-  "padding": { "bottom": 0, "top": -200, "left": -150, "right": 200 },
-  "autosize": { "type": "pad" },
-
+  "padding": { "bottom": 0, "top": -200, "left": -230, "right": 200 },
   "signals": [
     { "name": "radius", "update": "width / 2 - 20" },
     {
@@ -70,7 +68,7 @@
   "data": [
     {
       "name": "table",
-      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/2_wind_data.csv",
+      "url": "../Dataset/2_wind_data.csv",
       "format": {
         "type": "csv"
       }
@@ -112,8 +110,8 @@
       "fill": "color",
       "title": "Continents",
       "orient": "none",
-      "legendX": 330,
-      "legendY": -150,
+      "legendX": 230,
+      "legendY": -190,
       "direction": "vertical",
       "aria": true,
       "description": "Continents",
@@ -192,14 +190,14 @@
       "type": "ordinal",
       "domain": { "data": "table", "field": "continent" },
       "range": [
-        "#ff6bbf",
-        "#B87333",
-        "Blue",
-        "#FFC000",
-        "#E41B17",
-        "#5D6D7E",
-        "Purple",
-        "#0096FF"
+        "#e41a1c",
+        "#7D3C98",
+        "#F57C00",
+        "#D4AC0D",
+        "#37474F",
+        "#377eb8",
+        "#922B21",
+        "#FF69B4"
       ]
     }
   ],
@@ -386,6 +384,21 @@
           "y": { "field": "y2" },
           "stroke": { "value": "lightgray" },
           "strokeWidth": { "value": 1 }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 20 },
+          "y": { "value": -270 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 14 },
+          "fontWeight": { "value": "bold" },
+          "align": { "value": "center" },
+          "text": { "value": "Global Wind Speed against Direction" }
         }
       }
     }
