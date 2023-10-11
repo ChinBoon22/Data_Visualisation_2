@@ -23,9 +23,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
 
     <!-- CSS file -->
     <link
@@ -54,7 +54,7 @@
       </div>
       <!-- end pure grid group -->
 
-      <!-- pure grid group 2: Bubble Map -->
+      <!-- pure grid group 1: Choropleth Map -->
       <div class="pure-g">
         <div class="pure-u-1-1">
           <div id="choropleth_map" class="vis-container1"></div>
@@ -79,7 +79,7 @@
                 />
                 <h2>Too Dry</h2>
                 <p>
-                  Regions like <font color="#F57C00"> Saudi Arabia</font>, <font color="#F57C00"> Iraq</font> and <font color="#e41a1c">Namibia</font> are characterized
+                  Regions like <b><font color="#F57C00"> Saudi Arabia</font></b>, <b><font color="#F57C00"> Iraq</font></b> and <b><font color="#e41a1c">Namibia</font></b> are characterized
                   by <b>arid deserts</b> and <b>minimal rainfall</b>.
                 </p>
               </div>
@@ -87,8 +87,8 @@
                 <img src="./images/rain_icon.png" alt="Wet Icon" class="icon" />
                 <h2>Too Wet</h2>
                 <p>
-                  Tropical climate zones like <font color="#e41a1c">Africa</font>, <font color="#7D3C98">South America</font>,
-                  <font color="#F57C00">Philippines</font>, and <font color="#FF69B4">Micronesia</font> have
+                  Tropical climate zones like <b><font color="#e41a1c">Africa</font></b>, <b><font color="#7D3C98">South America</font></b>,
+                  <b><font color="#F57C00">Philippines</font></b>, and <b><font color="#FF69B4">Micronesia</font></b> have
                   <b>lush rainforests</b> and <b>swampy areas</b>.
                 </p>
               </div> 
@@ -98,24 +98,24 @@
       </div>
       <!-- end pure grid group -->
 
-      <!-- pure grid group 2: Radar Chart -->
+      <!-- pure grid group 3: Radar Chart -->
       <div class="pure-g">
         <div class="pure-u-1-2">
           <div class="radar-chart-left">
-            <h3>Continental Wind Speed Variations</h3>
+            <h2 class=h2-title>Continental Wind Speed Variations</h2>
             <div class="container2">
               <div class="aus box">
                 <h3><font color="#37474F">Australia</font>: High Wind Speed (North West)</h2>
                 <p>
-                  During August and September, the Australian monsoon starts
-                  retreating. This may result in increased northwest winds as
-                  the monsoonal rains diminish.
+                  During August and September, the <b><font color="#37474F">Australian</font></b> monsoon starts
+                  retreating. This may result in increased <b>northwest</b> winds as
+                  the <b>monsoonal rains</b> diminish.
                 </p>
               </div>
               <div class="aus box" >
                 <h3><font color="#D4AC0D">Atlantic</font>: High Wind Speed (South East)</h2>
                 <p>
-                    High wind speeds in the southeast direction in the Atlantic Ocean can be influenced by the movement of tropical cyclones (hurricanes or typhoons).
+                    High wind speeds in the <b>southeast</b> direction in the <b><font color="#D4AC0D">Atlantic</font></b> Ocean can be influenced by the movement of tropical <b>cyclones</b> (hurricanes or typhoons).
                 </p>
               </div>
             </div>
@@ -127,42 +127,47 @@
       </div>
       <!-- end pure grid group -->
 
-      <!-- pure grid group 2: Radar Chart -->
-      <h2>Breathing Easy or Suffocating?<h2>
-      <h4>Click on the bubble to gain more insights<h4>
+      <!-- pure grid group 4: Packed Bubble Chart -->
+      <div class ="ozone-desc">
+        <h2 style="font-family:'Arial'" class=h2-title>Breathing Easy or Suffocating?<h2>
+      </div>
       <div class="monoxide_graph">
+        <p style="font-family:'Arial'" class="click" >Click on the bubble to gain more insights</p>
         <div class="pure-u-1-1">
           <div id="packed_bubble_chart" class="vis-container2"></div>
         </div>
       </div>
 
-      <div class="container">
-        <div class="box">
-          <h3>Forest Fires</h3>
+
+      <div style="font-family:'Arial'" class="container">
+        <div  class="box">
+          <h3 class="box-title">Forest Fires</h3>
           <p>
-            In regions with a history of wildfires, such as <font color="#F57C00"> Indonesia</font>, <font color="#7D3C98">Chile</font>, and parts of <font color="#F57C00"> China </font>, the burning of forests contribute to high CO levels, especially during dry seasons.
+            In regions with a history of wildfires, such as <font color="#F57C00"> Indonesia</font>, <font color="#7D3C98">Chile</font>, and parts of <font color="#F57C00"> China </font>, the burning of forests contribute to high CO levels, especially during <b>dry seasons</b>.
           </p>
         </div>
         <div class="box">
-          <h3>Industrialisation</h3>
+          <h3 class="box-title">Industrialisation</h3>
           <p>
-            Rapid industrialization in countries like <font color="#F57C00">China</font> and parts of <font color="#F57C00">Indonesia</font> lead to increased emissions of carbon monoxide from various factories and vehicles. 
+            Rapid industrialization in countries like <font color="#F57C00">China</font> and parts of <font color="#F57C00">Indonesia</font> increases emissions of carbon monoxide from <b>factories </b> and <b>vehicles</b>. 
           </p>
         </div>
         <div class="box">
-            <h3>Biomass Burning</h3>
-            <p>
-            In some agricultural regions like <font color="#F57C00">Indonesia</font>, the use of biomass burning for land clearing and crop management can release carbon monoxide into the air. 
+            <h3 class="box-title">Biomass Burning</h3>
+            <p style="font-family:'Arial'">
+            In agricultural regions like <font color="#F57C00">Indonesia</font>, the use of biomass burning for <b>land clearing</b> and <b>crop management</b> can release carbon monoxide into the air. 
             </p>
           </div>
       </div>
 
-      <h2>Unveiling the Ozone Hotspots</h2>
-      <!-- pure grid group 2: Radar Chart -->
-      <p>Ozone is a vital component of the Earth's atmosphere. It shields us from harmful solar radiation, creating the ozone layer. However, when it's found at ground level, it becomes a major air pollutant.</p>
-      <p>These top 20 countries, each with its own unique story, showcase the urgent need for action to mitigate ozone pollution and safeguard the air we breathe. .</p>
-      
+      <!-- pure grid group 5: Heatmap -->
       <div class="monoxide_graph">
+        <div class = "monoxide-desc">
+          <h2 style="font-family:'Arial'">Unveiling the Ozone Hotspots</h2>
+          <!-- pure grid group 2: Radar Chart -->
+          <p style="font-family:'Arial'"><b>Ozone</b> is a vital component of the Earth's atmosphere. It shields us from harmful <b>solar radiation</b>, creating the ozone layer. However, when it's found at ground level, it becomes a major air pollutant.</p>
+          <p style="font-family:'Arial'">These <b>top 20</b> countries, each with its own unique story, showcase the urgent need for action to mitigate <b>ozone pollution</b> and safeguard the air we breathe.</p>         
+        </div>
         <div class="pure-u-1-1">
           <div id="heatmap" class="vis-container2"></div>
         </div>

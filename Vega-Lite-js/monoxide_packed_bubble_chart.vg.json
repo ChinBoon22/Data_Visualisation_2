@@ -121,7 +121,7 @@
         "data": "table",
         "field": "air_quality_Carbon_Monoxide"
       },
-      "range": [100, 10000]
+      "range": [110, 10100]
     },
     {
       "name": "color",
@@ -264,7 +264,7 @@
       "encode": {
         "enter": {
           "fill": { "value": "white" },
-          "stroke": { "value": "#652c90" }
+          "stroke": { "value": "#7B3F00" }
         },
         "update": {
           "x": { "offset": 300 },
@@ -411,10 +411,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 125 },
-          "y": { "value": -10 },
+          "x": { "offset": 136 },
+          "y": { "value": -20 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 15 },
+          "fontSize": { "value": 19 },
           "align": { "value": "center" },
           "text": { "value": "Chile" }
         }
@@ -425,10 +425,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 125 },
-          "y": { "value": 8 },
+          "x": { "offset": 136 },
+          "y": { "value": 5 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 15 },
+          "fontSize": { "value": 19 },
           "align": { "value": "center" },
           "text": { "value": "4281.36" }
         }
@@ -439,10 +439,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -177 },
+          "x": { "offset": -197 },
           "y": { "value": 52 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 15 },
+          "fontSize": { "value": 17 },
           "align": { "value": "center" },
           "text": { "value": "Malaysia" }
         }
@@ -453,10 +453,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -177 },
-          "y": { "value": 70 },
+          "x": { "offset": -197 },
+          "y": { "value": 78 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 15 },
+          "fontSize": { "value": 17 },
           "align": { "value": "center" },
           "text": { "value": "4163.43" }
         }
@@ -467,10 +467,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -82 },
-          "y": { "value": -110 },
+          "x": { "offset": -103 },
+          "y": { "value": -127 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 11 },
+          "fontSize": { "value": 13 },
           "align": { "value": "center" },
           "text": { "value": "Ethiopia" }
         }
@@ -481,10 +481,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -82 },
-          "y": { "value": -95 },
+          "x": { "offset": -103 },
+          "y": { "value": -109 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 11 },
+          "fontSize": { "value": 13 },
           "align": { "value": "center" },
           "text": { "value": "2039.99" }
         }
@@ -495,10 +495,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 20 },
-          "y": { "value": 169 },
+          "x": { "offset": 37 },
+          "y": { "value": 182 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 14 },
+          "fontSize": { "value": 15 },
           "align": { "value": "center" },
           "text": { "value": "Indonesia" }
         }
@@ -509,10 +509,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 20 },
-          "y": { "value": 187 },
+          "x": { "offset": 35 },
+          "y": { "value": 202 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 14 },
+          "fontSize": { "value": 15 },
           "align": { "value": "center" },
           "text": { "value": "3596.97" }
         }
@@ -523,10 +523,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -105 },
-          "y": { "value": 110 },
+          "x": { "offset": -101 },
+          "y": { "value": 105 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 12 },
+          "fontSize": { "value": 13 },
           "align": { "value": "center" },
           "text": { "value": "Ecuador" }
         }
@@ -537,10 +537,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -105 },
-          "y": { "value": 125 },
+          "x": { "offset": -101 },
+          "y": { "value": 121 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 12 },
+          "fontSize": { "value": 13 },
           "align": { "value": "center" },
           "text": { "value": "2227.47" }
         }
@@ -551,10 +551,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -55 },
-          "y": { "value": 55 },
+          "x": { "offset": -35 },
+          "y": { "value": 48 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 11 },
+          "fontSize": { "value": 12 },
           "align": { "value": "center" },
           "text": { "value": "China" }
         }
@@ -565,10 +565,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -55 },
-          "y": { "value": 69 },
+          "x": { "offset": -35 },
+          "y": { "value": 63 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 11 },
+          "fontSize": { "value": 12 },
           "align": { "value": "center" },
           "text": { "value": "1655.58" }
         }
@@ -579,10 +579,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 12 },
-          "y": { "value": -2 },
+          "x": { "offset": -14 },
+          "y": { "value": -20 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 9 },
+          "fontSize": { "value": 10 },
           "align": { "value": "center" },
           "text": { "value": "Burundi" }
         }
@@ -593,10 +593,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -186 },
-          "y": { "value": -76 },
+          "x": { "offset": -220 },
+          "y": { "value": -88 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 11 },
+          "fontSize": { "value": 12 },
           "align": { "value": "center" },
           "text": { "value": "Nepal" }
         }
@@ -607,10 +607,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -186 },
-          "y": { "value": -61 },
+          "x": { "offset": -220 },
+          "y": { "value": -71 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 11 },
+          "fontSize": { "value": 12 },
           "align": { "value": "center" },
           "text": { "value": "1555.46" }
         }
@@ -621,10 +621,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -60 },
-          "y": { "value": 222 },
+          "x": { "offset": -50 },
+          "y": { "value": 245 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 11 },
+          "fontSize": { "value": 12 },
           "align": { "value": "center" },
           "text": { "value": "Zambia" }
         }
@@ -635,8 +635,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -218 },
-          "y": { "value": -26 },
+          "x": { "offset": -240 },
+          "y": { "value": 0 },
           "fill": { "value": "white" },
           "fontSize": { "value": 11 },
           "align": { "value": "center" },
@@ -649,10 +649,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -117 },
-          "y": { "value": -50 },
+          "x": { "offset": -121 },
+          "y": { "value": -53 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 10 },
+          "fontSize": { "value": 11 },
           "align": { "value": "center" },
           "text": { "value": "Jamaica" }
         }
@@ -663,8 +663,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 108 },
-          "y": { "value": 150 },
+          "x": { "offset": 122 },
+          "y": { "value": 161 },
           "fill": { "value": "white" },
           "fontSize": { "value": 12 },
           "align": { "value": "center" },
@@ -678,9 +678,9 @@
       "encode": {
         "enter": {
           "x": { "offset": 123 },
-          "y": { "value": -120 },
+          "y": { "value": -148 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 11 },
+          "fontSize": { "value": 12 },
           "align": { "value": "center" },
           "text": { "value": "India" }
         }
@@ -692,9 +692,9 @@
       "encode": {
         "enter": {
           "x": { "offset": 123 },
-          "y": { "value": -108 },
+          "y": { "value": -133 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 10 },
+          "fontSize": { "value": 11 },
           "align": { "value": "center" },
           "text": { "value": "1177.43" }
         }
@@ -705,8 +705,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -15 },
-          "y": { "value": -190 },
+          "x": { "offset": -13 },
+          "y": { "value": -222 },
           "fill": { "value": "white" },
           "fontSize": { "value": 10 },
           "align": { "value": "center" },
@@ -719,10 +719,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 15 },
-          "y": { "value": -137 },
+          "x": { "offset": 22 },
+          "y": { "value": -159 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 10 },
+          "fontSize": { "value": 12 },
           "align": { "value": "center" },
           "text": { "value": "France" }
         }
@@ -733,10 +733,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -136 },
-          "y": { "value": -160 },
+          "x": { "offset": -162 },
+          "y": { "value": -177 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 9 },
+          "fontSize": { "value": 10 },
           "align": { "value": "center" },
           "text": { "value": "Thailand" }
         }
@@ -747,10 +747,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -97 },
-          "y": { "value": -160 },
+          "x": { "offset": -98 },
+          "y": { "value": -173 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 11 },
+          "fontSize": { "value": 12 },
           "align": { "value": "center" },
           "text": { "value": "Iran" }
         }
@@ -761,10 +761,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 211 },
-          "y": { "value": -26 },
+          "x": { "offset": 230 },
+          "y": { "value": -28 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 10 },
+          "fontSize": { "value": 11 },
           "align": { "value": "center" },
           "text": { "value": "Pakistan" }
         }
@@ -776,9 +776,9 @@
       "encode": {
         "enter": {
           "x": { "offset": 0 },
-          "y": { "value": -275 },
+          "y": { "value": -295 },
           "fill": { "value": "black" },
-          "fontSize": { "value": 13 },
+          "fontSize": { "value": 15 },
           "fontWeight": { "value": "bold" },
           "align": { "value": "center" },
           "text": { "value": "Global Carbon Monoxide Index" }

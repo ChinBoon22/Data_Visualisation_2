@@ -18,11 +18,11 @@
     },
     {
       "name": "center_to",
-      "value": [10.082, 8.6753],
+      "value": [-1.6, 20.49],
       "bind": {
         "input": "select",
         "options": [
-          [10.082, 8.6753],
+          [-1.6, 15.49],
           [-101.09, 50.71],
           [46.6, -20.49],
           [-48.082, -10.6753],
@@ -30,7 +30,7 @@
           [140.082, -25.6753]
         ],
         "labels": [
-          "Nigeria",
+          "Niger",
           "USA",
           "Madagascar",
           "Brazil",
@@ -192,9 +192,15 @@
           },
           {
             "country": "Madagascar",
-            "latitude": -20,
-            "longitude": 43.49,
+            "latitude": -15,
+            "longitude": 35.49,
             "label": "Madagascar"
+          },
+          {
+            "country": "Niger",
+            "latitude": 20.6,
+            "longitude": 6.49,
+            "label": "Niger"
           }
         ]
       },
@@ -255,6 +261,7 @@
         "dx": 0,
         "dy": 13,
         "fontSize": 10,
+        "fontWeight": "bold",
         "fill": "black"
       },
       "encoding": {
