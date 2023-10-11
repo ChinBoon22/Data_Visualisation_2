@@ -3,7 +3,7 @@
   "description": "A radar chart example, showing multiple dimensions in a radial layout.",
   "width": 500,
   "height": 500,
-  "padding": { "bottom": 0, "top": -200, "left": -230, "right": 200 },
+  "padding": { "bottom": 0, "top": -200, "left": -230, "right": 230 },
   "signals": [
     { "name": "radius", "update": "width / 2 - 20" },
     {
@@ -110,7 +110,7 @@
       "fill": "color",
       "title": "Continents",
       "orient": "none",
-      "legendX": 230,
+      "legendX": 250,
       "legendY": -190,
       "direction": "vertical",
       "aria": true,

@@ -769,6 +769,21 @@
           "text": { "value": "Pakistan" }
         }
       }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 0 },
+          "y": { "value": -275 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 13 },
+          "fontWeight": { "value": "bold" },
+          "align": { "value": "center" },
+          "text": { "value": "Global Carbon Monoxide Index" }
+        }
+      }
     }
   ]
 }

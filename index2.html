@@ -23,6 +23,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
 
     <!-- CSS file -->
     <link
@@ -38,14 +41,14 @@
       <!-- pure grid group: Introduction -->
       <div class="pure-g">
         <div class="pure-u-1-1">
-          <h1>Embrace Nature Symphony</h1>
+          <h1 class = "main-title">Embrace Nature Symphony</h1>
           <p class="intro">
-            Weather, in all its variability, is a complex puzzle created by
+            <b>Weather</b>, in all its variability, is a complex puzzle created by
             nature. Analysing the weather patterns is crucial towards mitigating
-            the impacts of climate change and fostering a more sustainable
+            the impacts of <b>climate change</b> and fostering a more sustainable
             future. The data in this visualisation reflects the daily weather
-            information for capital cities around the world from 29 August 2023
-            to 13 September 2023.
+            information for <b>capital cities</b> around the world from <b>29 August 2023</b>
+            to <b>13 September 2023</b>.
           </p>
         </div>
       </div>
@@ -66,7 +69,7 @@
         </div>
         <div class="pure-u-1-2">
           <div class="description-right">
-            <h3>Exploring Regions of Droughts and Deluge</h3>
+            <h3 class="drought-and-deluge">Exploring Regions of Droughts and Deluge</h3>
             <div class="container">
               <div class="box dry">
                 <img
@@ -76,7 +79,7 @@
                 />
                 <h2>Too Dry</h2>
                 <p>
-                  Regions like Saudi Arabia, Iraq and Namibia are characterized
+                  Regions like <font color="#F57C00"> Saudi Arabia</font>, <font color="#F57C00"> Iraq</font> and <font color="#e41a1c">Namibia</font> are characterized
                   by <b>arid deserts</b> and <b>minimal rainfall</b>.
                 </p>
               </div>
@@ -84,11 +87,11 @@
                 <img src="./images/rain_icon.png" alt="Wet Icon" class="icon" />
                 <h2>Too Wet</h2>
                 <p>
-                  Tropical climate zones like Africa, South America,
-                  Philippines, and Micronesia have
+                  Tropical climate zones like <font color="#e41a1c">Africa</font>, <font color="#7D3C98">South America</font>,
+                  <font color="#F57C00">Philippines</font>, and <font color="#FF69B4">Micronesia</font> have
                   <b>lush rainforests</b> and <b>swampy areas</b>.
                 </p>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -102,7 +105,7 @@
             <h3>Continental Wind Speed Variations</h3>
             <div class="container2">
               <div class="aus box">
-                <h3>Australia: High Wind Speed (North West)</h2>
+                <h3><font color="#37474F">Australia</font>: High Wind Speed (North West)</h2>
                 <p>
                   During August and September, the Australian monsoon starts
                   retreating. This may result in increased northwest winds as
@@ -110,7 +113,7 @@
                 </p>
               </div>
               <div class="aus box" >
-                <h3>Atlantic: High Wind Speed (South East)</h2>
+                <h3><font color="#D4AC0D">Atlantic</font>: High Wind Speed (South East)</h2>
                 <p>
                     High wind speeds in the southeast direction in the Atlantic Ocean can be influenced by the movement of tropical cyclones (hurricanes or typhoons).
                 </p>
@@ -125,8 +128,8 @@
       <!-- end pure grid group -->
 
       <!-- pure grid group 2: Radar Chart -->
-      <h3>Global Carbon Monoxide Index<h3>
-      <h3>Click on the bubble to gain more insights<h3>
+      <h2>Breathing Easy or Suffocating?<h2>
+      <h4>Click on the bubble to gain more insights<h4>
       <div class="monoxide_graph">
         <div class="pure-u-1-1">
           <div id="packed_bubble_chart" class="vis-container2"></div>
@@ -137,25 +140,28 @@
         <div class="box">
           <h3>Forest Fires</h3>
           <p>
-            In regions with a history of wildfires, such as Indonesia, Chile, and parts of China, the burning of forests and vegetation can contribute to high CO levels, especially during dry seasons.
+            In regions with a history of wildfires, such as <font color="#F57C00"> Indonesia</font>, <font color="#7D3C98">Chile</font>, and parts of <font color="#F57C00"> China </font>, the burning of forests contribute to high CO levels, especially during dry seasons.
           </p>
         </div>
         <div class="box">
           <h3>Industrialisation</h3>
           <p>
-            Rapid industrialization in countries like China and parts of Indonesia can lead to increased emissions of carbon monoxide from various sources, including factories, vehicles, and power plants. 
+            Rapid industrialization in countries like <font color="#F57C00">China</font> and parts of <font color="#F57C00">Indonesia</font> lead to increased emissions of carbon monoxide from various factories and vehicles. 
           </p>
         </div>
         <div class="box">
             <h3>Biomass Burning</h3>
             <p>
-                In some agricultural regions like Indonesia, the use of biomass burning for land clearing and crop management can release carbon monoxide into the air. 
+            In some agricultural regions like <font color="#F57C00">Indonesia</font>, the use of biomass burning for land clearing and crop management can release carbon monoxide into the air. 
             </p>
           </div>
       </div>
 
-      <h2>Global Warming Effect</h2>
+      <h2>Unveiling the Ozone Hotspots</h2>
       <!-- pure grid group 2: Radar Chart -->
+      <p>Ozone is a vital component of the Earth's atmosphere. It shields us from harmful solar radiation, creating the ozone layer. However, when it's found at ground level, it becomes a major air pollutant.</p>
+      <p>These top 20 countries, each with its own unique story, showcase the urgent need for action to mitigate ozone pollution and safeguard the air we breathe. .</p>
+      
       <div class="monoxide_graph">
         <div class="pure-u-1-1">
           <div id="heatmap" class="vis-container2"></div>

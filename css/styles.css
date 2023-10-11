@@ -8,9 +8,9 @@ body {
 
   /* Center-align the page content */
   .page {
-    max-width: 1100px; /* Adjust the maximum width as needed */
+    max-width: 1200px; /* Adjust the maximum width as needed */
     margin-left: 60px;
-    margin-right: 40px;
+    margin-right: 0px;
     padding: 30px;
     background-color: #fff; /* White background for content */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
@@ -18,15 +18,21 @@ body {
   
   /* Style the heading */
   h1 {
-    font-size: 24px;
+    font-size: 40px;
     color: Black; /* Dark text color */
     text-align: center; 
   }
+
+  .main-title{
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 30;
+  }
+
   
   /* Style the introduction paragraph */
   p {
     font-size: 16px;
-    color: #333; /* Slightly darker text color */
+    color: black; /* Slightly darker text color */
     line-height: 1.5; /* Increase line spacing for readability */
   }
   
@@ -120,4 +126,8 @@ body {
 .monoxide_graph{
     align-items: center;
     text-align: center;
+}
+
+.drought-and-deluge{
+    margin-left: 23px
 }
