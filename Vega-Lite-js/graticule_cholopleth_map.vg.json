@@ -3,7 +3,7 @@
   "title": "Global Average Temperature Distribution (29-08-2023 - 13-09-2023)",
   "width": 800,
   "height": 400,
-  "padding": 0,
+  "padding": { "top": 0 },
   "params": [
     {
       "name": "zoom_level",
@@ -18,11 +18,11 @@
     },
     {
       "name": "center_to",
-      "value": [-1.6, 20.49],
+      "value": [8.6, 3.49],
       "bind": {
         "input": "select",
         "options": [
-          [-1.6, 15.49],
+          [8.6, 3.49],
           [-101.09, 50.71],
           [46.6, -20.49],
           [-48.082, -10.6753],
@@ -30,7 +30,7 @@
           [140.082, -25.6753]
         ],
         "labels": [
-          "Niger",
+          "Nigeria",
           "USA",
           "Madagascar",
           "Brazil",
@@ -197,10 +197,10 @@
             "label": "Madagascar"
           },
           {
-            "country": "Niger",
-            "latitude": 20.6,
-            "longitude": 6.49,
-            "label": "Niger"
+            "country": "Nigeria",
+            "latitude": 13.6,
+            "longitude": 3.49,
+            "label": "Nigeria"
           }
         ]
       },
@@ -250,7 +250,7 @@
             "country": "USA2",
             "latitude": 20.6,
             "longitude": -179.49,
-            "label": "USA transitions to autumn (cooler). "
+            "label": "USA transitions to autumn. "
           }
         ]
       },
