@@ -1,7 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Global Average Temperature Distribution (29-08-2023 - 13-09-2023)",
-  "width": 800,
+  "title": {
+    "text": "Global Average Temperature Distribution (29-08-2023 - 13-09-2023)",
+    "fontSize": 15
+  },
+  "width": 880,
   "height": 400,
   "padding": { "top": 0 },
   "params": [
@@ -95,6 +98,13 @@
           }
         }
       ],
+      "params": [
+        {
+          "name": "highlight",
+          "select": { "type": "point", "on": "mouseover" }
+        },
+        { "name": "select", "select": "point" }
+      ],
       "mark": { "type": "geoshape" },
       "encoding": {
         "color": {
@@ -124,7 +134,15 @@
             "type": "quantitative",
             "title": "Average Temperature (°C)"
           }
-        ]
+        ],
+        "fillOpacity": {
+          "condition": [{ "param": "select", "value": 1 }],
+          "value": 0.3
+        },
+        "strokeWidth": {
+          "condition": [{ "param": "select", "value": 3 }],
+          "value": 1
+        }
       }
     },
     {

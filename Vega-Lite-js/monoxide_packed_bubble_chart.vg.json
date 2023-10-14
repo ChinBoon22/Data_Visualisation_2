@@ -240,9 +240,9 @@
           "stroke": { "value": "grey" }
         },
         "update": {
-          "x": { "offset": 300 },
+          "x": { "offset": 330 },
           "y": { "offset": -220 },
-          "width": { "value": 302 },
+          "width": { "value": 322 },
           "height": { "value": 102 },
           "opacity": { "value": 1 },
           "cornerRadius": { "signal": "cornerRadius" },
@@ -267,9 +267,9 @@
           "stroke": { "value": "#7B3F00" }
         },
         "update": {
-          "x": { "offset": 300 },
+          "x": { "offset": 330 },
           "y": { "offset": -220 },
-          "width": { "value": 300 },
+          "width": { "value": 320 },
           "height": { "value": 100 },
           "opacity": { "value": 1 },
           "cornerRadius": { "signal": "cornerRadius" },
@@ -291,7 +291,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "signal": "width", "offset": 20 },
+          "x": { "signal": "width", "offset": 60 },
           "y": { "value": -195 },
           "fill": { "value": "black" },
           "fontSize": { "value": 15 },
@@ -307,7 +307,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "signal": "width", "offset": 20 },
+          "x": { "signal": "width", "offset": 60 },
           "y": { "value": -175 },
           "fill": { "value": "black" },
           "fontSize": { "value": 15 },
@@ -323,10 +323,11 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "signal": "width", "offset": 20 },
+          "x": { "signal": "width", "offset": 60 },
           "y": { "value": -155 },
           "fill": { "value": "black" },
           "fontSize": { "value": 15 },
+          "fontWeight": { "value": "400" },
           "align": { "value": "left" }
         },
         "update": {
@@ -339,7 +340,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "signal": "width", "offset": 20 },
+          "x": { "signal": "width", "offset": 60 },
           "y": { "value": -135 },
           "fill": { "value": "black" },
           "fontSize": { "value": 15 },
@@ -355,7 +356,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "signal": "width", "offset": -88 },
+          "x": { "signal": "width", "offset": -55 },
           "y": { "value": -195 },
           "fill": { "value": "#36454F" },
           "fontSize": { "value": 15 },
@@ -369,7 +370,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "signal": "width", "offset": -88 },
+          "x": { "signal": "width", "offset": -55 },
           "y": { "value": -175 },
           "fill": { "value": "#36454F" },
           "fontSize": { "value": 15 },
@@ -383,7 +384,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "signal": "width", "offset": -88 },
+          "x": { "signal": "width", "offset": -55 },
           "y": { "value": -155 },
           "fill": { "value": "#36454F" },
           "fontSize": { "value": 15 },
@@ -397,7 +398,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "signal": "width", "offset": -88 },
+          "x": { "signal": "width", "offset": -55 },
           "y": { "value": -135 },
           "fill": { "value": "#36454F" },
           "fontSize": { "value": 15 },
@@ -782,6 +783,35 @@
           "fontWeight": { "value": "bold" },
           "align": { "value": "center" },
           "text": { "value": "Global Carbon Monoxide Index" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 430 },
+          "y": { "value": -240 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 15 },
+          "fontWeight": { "value": "bold" },
+          "align": { "value": "center" },
+          "text": { "value": "Click the bubble for updates" }
+        }
+      }
+    },
+    {
+      "type": "line",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "interpolate": { "value": "linear-closed" },
+          "x": { "value": 300 },
+          "y": { "value": -240 },
+          "stroke": { "value": "black" },
+          "strokeWidth": { "value": 2 },
+          "align": { "value": "center" }
         }
       }
     }

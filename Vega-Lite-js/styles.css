@@ -11,7 +11,9 @@ body {
     max-width: 1200px; /* Adjust the maximum width as needed */
     margin-left: 90px;
     margin-right: 0px;
-    padding: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 45px;
     background-color: #fff; /* White background for content */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   }
@@ -21,11 +23,6 @@ body {
     font-size: 40px;
     color: Black; /* Dark text color */
     text-align: center; 
-  }
-
-  .main-title{
-    font-family: 'Lobster Two', sans-serif;
-    font-size: 30;
   }
 
   
@@ -41,52 +38,68 @@ body {
     font-size: 12px;
     color: #777; /* Light gray text color */
   }
+
+  .main-title{
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 50px;
+  }
   
 /* Style the vis-container for the visualization */
   .vis-container1 {
-    margin-top: 20px; /* Add some spacing between visualizations */
+    margin-top: 10px; /* Add some spacing between visualizations */
     border: 1px solid #ddd; /* Add a border around the visualization */
     background-color: #fff; /* White background for visualizations */
-    padding: 20px; /* Add padding to the visualization container */
+    padding-bottom: 20px; /* Add padding to the visualization container */
+    padding-top: 20px; /* Add padding to the visualization container */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    width: 100%
 }
 
 .vis-container2 {
     margin-top: 30px; /* Add some spacing between visualizations */
-    margin-left: 10px;
+    margin-left: 0px;
+    width: 100%
 }
 
-.description-right{
-    margin-top: 50px; /* Add some spacing between visualizations */
+.description-right{/* Add some spacing between visualizations */
     margin-left: 35px;
-}
+    width: 97%;
 
-.intro{
-    margin-left: 47px;
-    margin-right: 47px;
-    color: "black"; /* Light gray text color */
 }
 
 .container {
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Space between the boxes */
     max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px;
+    margin-right: 16px; /* Center the container horizontally */
+    margin-left: 0px;
 }
 
 /* Style the boxes */
 .box {
     flex: 1; /* Equal width for both boxes */
+    width: 30;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-left: 5px;
-    margin-right: 15px; /* Add some spacing between the boxes */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    transition: box-shadow 0.3s; 
+    margin-right: 0px; /* Add some spacing between the boxes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: box-shadow 0.3s;
+}
+
+/* Style the boxes */
+.box1 {
+  flex: 6; /* Equal width for both boxes */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 0px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: box-shadow 0.3s;
 }
 
 /* Add hover effect */
@@ -94,19 +107,29 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Increased box shadow on hover */
 }
 
+.box1:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Increased box shadow on hover */
+}
+
+.box3:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Increased box shadow on hover */
+}
+
 /* Style for the "Too Dry" box */
 .dry {
     background-color: "white"; /* Customize the background color */
+    margin-right: 20px;
 }
 
 /* Style for the "Too Wet" box */
 .wet {
     background-color: "white"; /* Customize the background color */
+    margin-left: 20px;
 }
 
 .icon {
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
+    width: 42px; /* Adjust the width as needed */
+    height: 42px; /* Adjust the height as needed */
     margin-right: 0px; /* Add spacing between the icon and text */
 }
 
@@ -116,14 +139,13 @@ body {
 
 .aus {
     flex: 1; /* Equal width for both boxes */
-    width: 8;
     padding: 10px;
     padding-left: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-left: 15px;
     margin-top: 50px;
     margin-bottom: 20px;
+    margin-left: 0px;
     margin-right: 50px; /* Add some spacing between the boxes */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
@@ -133,15 +155,16 @@ body {
     text-align: center;
 }
 
-.drought-and-deluge{
-    margin-left: 23px
+.intro{
+  margin-left: 0px;
+  margin-right:0px;
+  text-align: left;
+  color: "black"; /* Light gray text color */
 }
 
-.monoxide-desc{
-  align-items: left;
-  text-align: left;
-  margin-left: 20px;
-  margin-right: 20px;
+.drought-and-deluge{
+    margin-top: 33px;
+    margin-left: 0px;
 }
 
 .ozone-desc{
@@ -150,18 +173,136 @@ body {
   margin-top: -20px;
 }
 
-.intro{
-  text-align: left;
-}
-
 .click{
-  margin-left: 20px;
-}
-
-.h2-title{
   margin-left: 20px;
 }
 
 .box-title{
   font-size: 35
+}
+
+.radar-container2{
+  margin-top: 32px;
+  margin-left: 10px;
+}
+
+.monoxide-container{
+position: relative;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+width: 100%;
+}
+
+.monoxide_graph{
+  margin-top: -10px;
+  margin-left: 250px;
+}
+
+.slanting-line1 {
+  width: 1px; /* Adjust line thickness as needed */
+  height: 60px; /* Adjust line length as needed */
+  position: absolute;
+  background-color: #000; /* Line color */
+  top: 159px ;
+  left: 26%; /* Adjust left position to point to the bubble */
+  transform: translateY(-50%) rotate(-60deg); /* Adjust rotation for the slanting angle */
+}
+
+.slanting-line2 {
+  width: 1px; /* Adjust line thickness as needed */
+  height: 80px; /* Adjust line length as needed */
+  background-color: #000; /* Line color */
+  position: absolute;
+  top: 480px;
+  left: 20%; /* Adjust left position to point to the bubble */
+  transform: translateY(-50%) rotate(-130deg); /* Adjust rotation for the slanting angle */
+}
+
+.slanting-line3 {
+  width: 1px; /* Adjust line thickness as needed */
+  height: 30px; /* Adjust line length as needed */
+  background-color: #000; /* Line color */
+  position: absolute;
+  top: 289px;
+  left: 21.5%; /* Adjust left position to point to the bubble */
+  transform: translateY(-50%) rotate(-70deg); /* Adjust rotation for the slanting angle */
+}
+
+.slanting-line4 {
+  width: 1px; /* Adjust line thickness as needed */
+  height: 40px; /* Adjust line length as needed */
+  background-color: #000; /* Line color */
+  position: absolute;
+  top: 459px;
+  left: 68%; /* Adjust left position to point to the bubble */
+  transform: translateY(-50%) rotate(-65deg); /* Adjust rotation for the slanting angle */
+}
+
+.annotate1{
+  position: absolute;
+  top: 100px ;
+  font-size: 14px;
+  left: 5.5%;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif; /* Use the Google font */
+}
+
+.annotate2{
+  position: absolute;
+  top: 500px;
+  font-size: 14px;
+  left: 3.5%;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif; /* Use the Google font */
+}
+
+.annotate3{
+  position: absolute;
+  top: 250px;
+  font-size: 14px;
+  left: 0.5%;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif; /* Use the Google font */
+}
+
+.annotate4{
+  position: absolute;
+  top: 450px;
+  font-size: 14px;
+  left: 70.5%;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif; /* Use the Google font */
+}
+
+.box3{
+    flex: 4; /* Equal width for both boxes */
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px; /* Add some spacing between the boxes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: box-shadow 0.3s;
+}
+
+.container3 {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between the boxes */
+  margin-right: 0px; /* Center the container horizontally */
+  margin-left: 0px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.biomass-burning{
+  margin-right: -1px
+}
+
+.forest-fire{
+  margin-left: -1px
+}
+
+.ozone-graph{
+  margin-top: 40px;
 }

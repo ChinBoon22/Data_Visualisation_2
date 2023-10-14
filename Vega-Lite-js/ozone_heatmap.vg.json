@@ -6,7 +6,7 @@
   },
   "params": [{ "name": "highlight", "select": "point" }],
   "width": 600,
-  "height": 300,
+  "height": 400,
   "title": "Top 20 Countries with Highest Ozone Index",
   "layer": [
     {

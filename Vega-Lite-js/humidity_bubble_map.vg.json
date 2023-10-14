@@ -4,7 +4,10 @@
   "data": { "url": "../Dataset/aggregated_weather.csv" },
   "width": 400,
   "height": 400,
-  "title": "Humidity, Cloud Cover and Precipitation Across Continents",
+  "title": {
+    "text": "Humidity, Cloud Cover and Precipitation Across Continents",
+    "fontSize": 15
+  },
   "layer": [
     {
       "selection": {
@@ -51,12 +54,12 @@
               "Pacific"
             ],
             "range": [
-              "#e41a1c",
+              "#988558",
               "#7D3C98",
-              "#F57C00",
-              "#D4AC0D",
+              "#e41a1c",
+              "#87CEEB",
               "#37474F",
-              "#377eb8",
+              "#0F52BA",
               "#922B21",
               "#FF69B4"
             ]

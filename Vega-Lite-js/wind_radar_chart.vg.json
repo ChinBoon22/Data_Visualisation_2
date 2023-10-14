@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "A radar chart example, showing multiple dimensions in a radial layout.",
-  "width": 500,
-  "height": 500,
-  "padding": { "bottom": 0, "top": -200, "left": -230, "right": 230 },
+  "width": 480,
+  "height": 490,
+  "padding": { "bottom": 0, "top": -200, "left": -200, "right": 230 },
   "signals": [
     { "name": "radius", "update": "width / 2 - 20" },
     {
@@ -36,7 +36,7 @@
       "value": false,
       "on": [
         {
-          "events": "@legendSymbol:click, @legendLabel:click",
+          "events": "@legendSymbol:click, @legendLabel:click, @legendgr:click",
           "update": "event.shiftKey",
           "force": true
         }
@@ -47,7 +47,7 @@
       "value": { "value": null, "counter": 0, "clicked": false },
       "on": [
         {
-          "events": "@legendSymbol:click, @legendLabel:click",
+          "events": "@legendSymbol:click, @legendLabel:click, @legendgr:click",
           "update": "!(clicked.counter >1) && clicked.clicked!==true?{value: datum.value, counter:datum.value===clicked.value ?clicked.counter+1:1, clicked:clicked.counter%2===0||datum.value!==clicked.value? true:false}:false",
           "force": false
         }
@@ -58,7 +58,7 @@
       "value": false,
       "on": [
         {
-          "events": "@legendSymbol:click, @legendLabel:click,mouseup[!event.item]",
+          "events": "@legendSymbol:click, @legendLabel:click, @legendgr:click, mouseup[!event.item]",
           "update": "!clickedEvent"
         }
       ]
@@ -68,7 +68,7 @@
   "data": [
     {
       "name": "table",
-      "url": "../Dataset/2_wind_data.csv",
+      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/2_wind_data.csv",
       "format": {
         "type": "csv"
       }
@@ -115,24 +115,16 @@
       "direction": "vertical",
       "aria": true,
       "description": "Continents",
-      "labelColor": { "value": "color" },
       "encode": {
-        "gradient": {
-          "name": "legendgr",
-          "interactive": true,
-          "gradientLength": { "value": 30 },
-          "gradientThickness": { "value": 10 },
+        "symbols": {
           "update": {
-            "gradientStrokeColor": {
-              "value": "color"
-            },
-            "gradientStrokeWidth": {
-              "value": 20
-            },
-            "gradientOpacity": [
+            "fillOpacity": [
               {
-                "test": "!length(data('selected')) || indata('selected', 'value', datum.value)",
-                "value": 1
+                "test": "indata('selected', 'value', null)  || !length(data('selected')) || indata('selected', 'value', datum.value)",
+                "value": 0.8
+              },
+              {
+                "value": 0.4
               }
             ]
           }
@@ -141,26 +133,26 @@
           "name": "legendLabel",
           "interactive": true,
           "update": {
-            "labelColor": [
-              {
-                "test": "!length(data('selected')) || indata('selected', 'value', datum.value)",
-                "value": "color"
-              },
-              {
-                "fill": "black"
-              }
-            ],
             "rect": { "width": 40, "height": 30 },
             "text": {
               "field": "value"
             },
             "opacity": [
               {
-                "test": "indata('selected', 'value', datum.value)",
+                "test": "indata('selected', 'value', null) || !length(data('selected')) || indata('selected', 'value', datum.value)",
                 "value": 1
               },
               {
+                "value": 0.4
+              }
+            ],
+            "fillOpacity": [
+              {
+                "test": "indata('selected', 'value', null) || !length(data('selected')) || indata('selected', 'value', datum.value)",
                 "value": 1
+              },
+              {
+                "value": 0.4
               }
             ]
           }
@@ -190,12 +182,12 @@
       "type": "ordinal",
       "domain": { "data": "table", "field": "continent" },
       "range": [
-        "#e41a1c",
+        "#988558",
         "#7D3C98",
-        "#F57C00",
-        "#D4AC0D",
+        "#e41a1c",
+        "#78C7C7",
         "#37474F",
-        "#377eb8",
+        "#0F52BA",
         "#922B21",
         "#FF69B4"
       ]
@@ -258,7 +250,7 @@
           "type": "symbol",
           "name": "category-point",
           "from": {
-            "data": "facet"
+            "data": "table"
           },
           "encode": {
             "enter": {
@@ -269,18 +261,22 @@
                 "signal": "scale('radial', datum.wind_mph) * sin(scale('angular', datum.wind_direction) + (PI/7.8))"
               },
               "tooltip": {
-                "signal": "{'Continent: ': datum.continent, 'Wind Speed (mph): ': datum.wind_mph, 'Direction: ': datum.wind_direction}"
+                "signal": "{'Continent: ': datum.continent, 'Wind Speed (mph): ': datum.wind_mph, 'Direction: ': datum.wind_direction}",
+                "zindex": 12
               },
               "fill": {
                 "scale": "color",
                 "field": "continent"
               },
-              "fillOpacity": {
-                "value": 0
-              },
-              "zindex": {
-                "value": 1
-              }
+              "fillOpacity": [
+                {
+                  "test": "((indata('selected', 'value', datum.continent)))",
+                  "value": 1
+                },
+                {
+                  "value": 0
+                }
+              ]
             }
           },
           "update": {
@@ -301,17 +297,18 @@
             },
             "fillOpacity": [
               {
-                "test": "datum === tooltip",
-                "value": 0
+                "test": "((indata('selected', 'value', datum.continent)))",
+                "value": 1.0
               },
               {
-                "value": 1
+                "value": 0
               }
             ]
           }
         }
       ]
     },
+
     {
       "type": "rule",
       "name": "radial-grid",
@@ -395,10 +392,175 @@
           "x": { "offset": 20 },
           "y": { "value": -270 },
           "fill": { "value": "black" },
-          "fontSize": { "value": 14 },
+          "fontSize": { "value": 15 },
           "fontWeight": { "value": "bold" },
           "align": { "value": "center" },
           "text": { "value": "Global Wind Speed against Direction" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -130 },
+          "y": { "value": -150 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "21.7" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 0 },
+          "y": { "value": -130 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "12.53" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 135 },
+          "y": { "value": 0 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "11.89" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 75 },
+          "y": { "value": -70 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "9.44" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -170 },
+          "y": { "value": 0 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "15.2" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -130 },
+          "y": { "value": 130 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "17.27" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 0 },
+          "y": { "value": 180 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "17.0" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 160 },
+          "y": { "value": 140 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "22.53" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -75 },
+          "y": { "value": -75 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "10.16" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": -70 },
+          "y": { "value": 65 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "8.08" }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": { "offset": 85 },
+          "y": { "value": 95 },
+          "fill": { "value": "black" },
+          "fontSize": { "value": 12 },
+          "fontWeight": { "value": "normal" },
+          "align": { "value": "center" },
+          "text": { "value": "10.94" }
         }
       }
     }
