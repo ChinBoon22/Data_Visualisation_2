@@ -2,6 +2,9 @@
 body {
     font-family: 'Open Sans', sans-serif; /* Use the Google font */
     background-color: #C1E1C1; /* Light gray background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0px;
     padding: 0;
   }
@@ -9,7 +12,7 @@ body {
   /* Center-align the page content */
   .page {
     max-width: 1200px; /* Adjust the maximum width as needed */
-    margin-left: 90px;
+    margin-left: 0px;
     margin-right: 0px;
     padding-left: 45px;
     padding-right: 45px;
