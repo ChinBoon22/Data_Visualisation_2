@@ -121,7 +121,7 @@
             "fillOpacity": [
               {
                 "test": "indata('selected', 'value', null)  || !length(data('selected')) || indata('selected', 'value', datum.value)",
-                "value": 0.8
+                "value": 0.65
               },
               {
                 "value": 0.4
@@ -185,7 +185,7 @@
         "#988558",
         "#7D3C98",
         "#e41a1c",
-        "#78C7C7",
+        "#54b8b8",
         "#37474F",
         "#0F52BA",
         "#922B21",
@@ -406,7 +406,7 @@
         "enter": {
           "x": { "offset": -130 },
           "y": { "value": -150 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#37474F" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -421,7 +421,7 @@
         "enter": {
           "x": { "offset": 0 },
           "y": { "value": -130 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#FF69B4" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -436,7 +436,7 @@
         "enter": {
           "x": { "offset": 135 },
           "y": { "value": 0 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#FF69B4" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -451,7 +451,7 @@
         "enter": {
           "x": { "offset": 75 },
           "y": { "value": -70 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#FF69B4" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -466,7 +466,7 @@
         "enter": {
           "x": { "offset": -170 },
           "y": { "value": 0 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#922B21" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -481,7 +481,7 @@
         "enter": {
           "x": { "offset": -130 },
           "y": { "value": 130 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#54b8b8" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -496,7 +496,7 @@
         "enter": {
           "x": { "offset": 0 },
           "y": { "value": 180 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#922B21" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -511,7 +511,7 @@
         "enter": {
           "x": { "offset": 160 },
           "y": { "value": 140 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#54b8b8" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -526,7 +526,7 @@
         "enter": {
           "x": { "offset": -75 },
           "y": { "value": -75 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#988558" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -541,7 +541,7 @@
         "enter": {
           "x": { "offset": -70 },
           "y": { "value": 65 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#988558" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },
@@ -556,7 +556,7 @@
         "enter": {
           "x": { "offset": 85 },
           "y": { "value": 95 },
-          "fill": { "value": "black" },
+          "fill": { "value": "#FF69B4" },
           "fontSize": { "value": 12 },
           "fontWeight": { "value": "normal" },
           "align": { "value": "center" },

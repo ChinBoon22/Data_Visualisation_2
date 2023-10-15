@@ -72,7 +72,7 @@
     },
     {
       "name": "remarks_title",
-      "value": "Remarks: "
+      "value": "Reason: "
     },
     {
       "name": "w",
@@ -294,6 +294,7 @@
           "x": { "signal": "width", "offset": 60 },
           "y": { "value": -195 },
           "fill": { "value": "black" },
+          "fontWeight": { "value": "bold" },
           "fontSize": { "value": 15 },
           "align": { "value": "left" }
         },
@@ -310,6 +311,7 @@
           "x": { "signal": "width", "offset": 60 },
           "y": { "value": -175 },
           "fill": { "value": "black" },
+          "fontWeight": { "value": "bold" },
           "fontSize": { "value": 15 },
           "align": { "value": "left" }
         },
@@ -327,7 +329,7 @@
           "y": { "value": -155 },
           "fill": { "value": "black" },
           "fontSize": { "value": 15 },
-          "fontWeight": { "value": "400" },
+          "fontWeight": { "value": "bold" },
           "align": { "value": "left" }
         },
         "update": {
@@ -343,6 +345,7 @@
           "x": { "signal": "width", "offset": 60 },
           "y": { "value": -135 },
           "fill": { "value": "black" },
+          "fontWeight": { "value": "bold" },
           "fontSize": { "value": 15 },
           "align": { "value": "left" }
         },

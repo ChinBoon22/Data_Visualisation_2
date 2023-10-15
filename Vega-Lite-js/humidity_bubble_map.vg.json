@@ -36,7 +36,11 @@
           "field": "precip_mm",
           "type": "quantitative",
           "title": "Precipitation (mm)",
-          "scale": { "range": [100, 2000] }
+          "scale": {
+            "type": "threshold",
+            "domain": [0.2, 1.0, 1.5, 2.5],
+            "range": [100, 400, 900, 1400, 2000]
+          }
         },
         "color": {
           "field": "continent",
@@ -57,7 +61,7 @@
               "#988558",
               "#7D3C98",
               "#e41a1c",
-              "#87CEEB",
+              "#54b8b8",
               "#37474F",
               "#0F52BA",
               "#922B21",
@@ -66,7 +70,7 @@
           }
         },
         "opacity": {
-          "condition": { "selection": "continent_highlight", "value": 0.55 },
+          "condition": { "selection": "continent_highlight", "value": 0.58 },
           "value": 0.2
         },
         "tooltip": [
@@ -93,31 +97,12 @@
     {
       "mark": {
         "type": "text",
-        "dx": -30,
-        "dy": 45,
+        "dx": -123,
+        "dy": 65,
         "fontSize": 11
       },
       "encoding": {
-        "text": { "field": "country", "type": "nominal" },
-        "color": { "value": "black" },
-        "opacity": {
-          "condition": {
-            "test": " datum['country'] == 'Paraguay'",
-            "value": 1
-          },
-          "value": 0
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "text",
-        "dx": -100,
-        "dy": 80,
-        "fontSize": 11
-      },
-      "encoding": {
-        "text": { "field": "country", "type": "nominal" },
+        "text": { "value": "During summer,  " },
         "color": { "value": "black" },
         "opacity": {
           "condition": {
@@ -131,16 +116,17 @@
     {
       "mark": {
         "type": "text",
-        "dx": 5,
-        "dy": -120,
-        "fontSize": 11
+        "dx": -158,
+        "dy": 77,
+        "fontSize": 11,
+        "fontWeight": "bold"
       },
       "encoding": {
-        "text": { "field": "country", "type": "nominal" },
-        "color": { "value": "black" },
+        "text": { "value": "Iran " },
+        "color": { "value": "#e41a1c" },
         "opacity": {
           "condition": {
-            "test": " datum['country'] == 'Mexico'",
+            "test": " datum['country'] == 'Iran'",
             "value": 1
           },
           "value": 0
@@ -150,12 +136,51 @@
     {
       "mark": {
         "type": "text",
-        "dx": 33,
-        "dy": -40,
+        "dx": -103,
+        "dy": 77,
         "fontSize": 11
       },
       "encoding": {
-        "text": { "field": "country", "type": "nominal" },
+        "text": { "value": " has low humidity. " },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Iran'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -52,
+        "dy": -45,
+        "fontSize": 11,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": { "value": "Ecuador " },
+        "color": { "value": "#7D3C98" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Ecuador'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 7,
+        "dy": -45,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "value": "has abundant  " },
         "color": { "value": "black" },
         "opacity": {
           "condition": {
@@ -169,16 +194,190 @@
     {
       "mark": {
         "type": "text",
-        "dx": 85,
-        "dy": -170,
+        "dx": -15,
+        "dy": -32,
         "fontSize": 11
       },
       "encoding": {
-        "text": { "field": "country", "type": "nominal" },
+        "text": { "value": "  rainfall year-round. " },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Ecuador'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 7,
+        "dy": -175,
+        "fontSize": 11,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": { "value": "Micronesia " },
+        "color": { "value": "#FF69B4" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Micronesia'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 70,
+        "dy": -175,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "value": " is influenced " },
         "color": { "value": "black" },
         "opacity": {
           "condition": {
             "test": " datum['country'] == 'Micronesia'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 40,
+        "dy": -165,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "value": " by trade winds." },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Micronesia'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -98,
+        "dy": -120,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "value": "Costal areas in " },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Mexico'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -40,
+        "dy": -120,
+        "fontSize": 11,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": { "value": " Mexico " },
+        "color": { "value": "#7D3C98" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Mexico'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -78,
+        "dy": -110,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "value": " experience hurricane." },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Mexico'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -157,
+        "dy": 170,
+        "fontSize": 11,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": { "value": "Saudi Arabia " },
+        "color": { "value": "#e41a1c" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Saudi Arabia'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -100,
+        "dy": 170,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "value": " consists " },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Saudi Arabia'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": -145,
+        "dy": 180,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": { "value": "of arid deserts." },
+        "color": { "value": "black" },
+        "opacity": {
+          "condition": {
+            "test": " datum['country'] == 'Saudi Arabia'",
             "value": 1
           },
           "value": 0
