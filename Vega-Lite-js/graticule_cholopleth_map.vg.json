@@ -91,7 +91,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/ChinBoon22/FIT3179_Homework/main/Dataset/aggregated_temperature.csv"
+              "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/aggregate_weather.csv"
             },
             "key": "country",
             "fields": ["temperature_celsius"]
