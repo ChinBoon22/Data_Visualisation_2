@@ -146,7 +146,7 @@
       "fill": "color",
       "size": "size",
       "clipHeight": 16,
-      "title": "Carbon Monoxide Level",
+      "title": "Carbon Monoxide Index",
       "encode": {
         "symbols": {
           "name": "legendSymbol",
@@ -416,7 +416,7 @@
       "encode": {
         "enter": {
           "x": { "offset": 136 },
-          "y": { "value": -20 },
+          "y": { "value": -10 },
           "fill": { "value": "white" },
           "fontSize": { "value": 19 },
           "align": { "value": "center" },
@@ -430,7 +430,7 @@
       "encode": {
         "enter": {
           "x": { "offset": 136 },
-          "y": { "value": 5 },
+          "y": { "value": 15 },
           "fill": { "value": "white" },
           "fontSize": { "value": 19 },
           "align": { "value": "center" },
@@ -444,7 +444,7 @@
       "encode": {
         "enter": {
           "x": { "offset": -197 },
-          "y": { "value": 52 },
+          "y": { "value": 57 },
           "fill": { "value": "white" },
           "fontSize": { "value": 17 },
           "align": { "value": "center" },
@@ -458,7 +458,7 @@
       "encode": {
         "enter": {
           "x": { "offset": -197 },
-          "y": { "value": 78 },
+          "y": { "value": 82 },
           "fill": { "value": "white" },
           "fontSize": { "value": 17 },
           "align": { "value": "center" },
@@ -471,8 +471,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -103 },
-          "y": { "value": -127 },
+          "x": { "offset": -99 },
+          "y": { "value": -129 },
           "fill": { "value": "white" },
           "fontSize": { "value": 13 },
           "align": { "value": "center" },
@@ -485,8 +485,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -103 },
-          "y": { "value": -109 },
+          "x": { "offset": -99 },
+          "y": { "value": -111 },
           "fill": { "value": "white" },
           "fontSize": { "value": 13 },
           "align": { "value": "center" },
@@ -500,9 +500,9 @@
       "encode": {
         "enter": {
           "x": { "offset": 37 },
-          "y": { "value": 182 },
+          "y": { "value": 185 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 15 },
+          "fontSize": { "value": 16 },
           "align": { "value": "center" },
           "text": { "value": "Indonesia" }
         }
@@ -514,9 +514,9 @@
       "encode": {
         "enter": {
           "x": { "offset": 35 },
-          "y": { "value": 202 },
+          "y": { "value": 208 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 15 },
+          "fontSize": { "value": 16 },
           "align": { "value": "center" },
           "text": { "value": "3596.97" }
         }
@@ -527,8 +527,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -101 },
-          "y": { "value": 105 },
+          "x": { "offset": -92 },
+          "y": { "value": 100 },
           "fill": { "value": "white" },
           "fontSize": { "value": 13 },
           "align": { "value": "center" },
@@ -541,8 +541,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -101 },
-          "y": { "value": 121 },
+          "x": { "offset": -92 },
+          "y": { "value": 118 },
           "fill": { "value": "white" },
           "fontSize": { "value": 13 },
           "align": { "value": "center" },
@@ -556,7 +556,7 @@
       "encode": {
         "enter": {
           "x": { "offset": -35 },
-          "y": { "value": 48 },
+          "y": { "value": 60 },
           "fill": { "value": "white" },
           "fontSize": { "value": 12 },
           "align": { "value": "center" },
@@ -570,7 +570,7 @@
       "encode": {
         "enter": {
           "x": { "offset": -35 },
-          "y": { "value": 63 },
+          "y": { "value": 75 },
           "fill": { "value": "white" },
           "fontSize": { "value": 12 },
           "align": { "value": "center" },
@@ -583,8 +583,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -14 },
-          "y": { "value": -20 },
+          "x": { "offset": -23 },
+          "y": { "value": -10 },
           "fill": { "value": "white" },
           "fontSize": { "value": 10 },
           "align": { "value": "center" },
@@ -597,7 +597,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -220 },
+          "x": { "offset": -230 },
           "y": { "value": -88 },
           "fill": { "value": "white" },
           "fontSize": { "value": 12 },
@@ -611,7 +611,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -220 },
+          "x": { "offset": -230 },
           "y": { "value": -71 },
           "fill": { "value": "white" },
           "fontSize": { "value": 12 },
@@ -625,8 +625,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -50 },
-          "y": { "value": 245 },
+          "x": { "offset": -48 },
+          "y": { "value": 250 },
           "fill": { "value": "white" },
           "fontSize": { "value": 12 },
           "align": { "value": "center" },
@@ -640,7 +640,7 @@
       "encode": {
         "enter": {
           "x": { "offset": -240 },
-          "y": { "value": 0 },
+          "y": { "value": 5 },
           "fill": { "value": "white" },
           "fontSize": { "value": 11 },
           "align": { "value": "center" },
@@ -653,8 +653,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -121 },
-          "y": { "value": -53 },
+          "x": { "offset": -124 },
+          "y": { "value": -57 },
           "fill": { "value": "white" },
           "fontSize": { "value": 11 },
           "align": { "value": "center" },
@@ -667,10 +667,10 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 122 },
+          "x": { "offset": 115 },
           "y": { "value": 161 },
           "fill": { "value": "white" },
-          "fontSize": { "value": 12 },
+          "fontSize": { "value": 13 },
           "align": { "value": "center" },
           "text": { "value": "Mali" }
         }
@@ -681,7 +681,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 123 },
+          "x": { "offset": 128 },
           "y": { "value": -148 },
           "fill": { "value": "white" },
           "fontSize": { "value": 12 },
@@ -695,7 +695,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 123 },
+          "x": { "offset": 128 },
           "y": { "value": -133 },
           "fill": { "value": "white" },
           "fontSize": { "value": 11 },
@@ -709,8 +709,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -13 },
-          "y": { "value": -222 },
+          "x": { "offset": -22 },
+          "y": { "value": -215 },
           "fill": { "value": "white" },
           "fontSize": { "value": 10 },
           "align": { "value": "center" },
@@ -723,7 +723,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": 22 },
+          "x": { "offset": 13 },
           "y": { "value": -159 },
           "fill": { "value": "white" },
           "fontSize": { "value": 12 },
@@ -737,8 +737,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -162 },
-          "y": { "value": -177 },
+          "x": { "offset": -166 },
+          "y": { "value": -178 },
           "fill": { "value": "white" },
           "fontSize": { "value": 10 },
           "align": { "value": "center" },
@@ -751,8 +751,8 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "x": { "offset": -98 },
-          "y": { "value": -173 },
+          "x": { "offset": -84 },
+          "y": { "value": -178 },
           "fill": { "value": "white" },
           "fontSize": { "value": 12 },
           "align": { "value": "center" },
