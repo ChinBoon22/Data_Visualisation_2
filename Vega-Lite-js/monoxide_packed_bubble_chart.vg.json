@@ -98,7 +98,7 @@
   "data": [
     {
       "name": "table",
-      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/aggregated_weather4.csv",
+      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/aggregate_weather.csv",
       "format": {
         "type": "csv"
       }

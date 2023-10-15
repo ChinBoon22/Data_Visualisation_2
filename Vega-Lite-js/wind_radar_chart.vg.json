@@ -68,7 +68,7 @@
   "data": [
     {
       "name": "table",
-      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/2_wind_data.csv",
+      "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/wind_data.csv",
       "format": {
         "type": "csv"
       }

@@ -2,10 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Heatmap",
   "data": {
-    "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/6_top_20_ozone_country.csv"
+    "url": "https://raw.githubusercontent.com/ChinBoon22/Data_Visualisation_2/main/Dataset/top_20_ozone_country.csv"
   },
   "width": 600,
-  "height": 500,
+  "height": 450,
   "title": {
     "text": "Top 20 Countries with Highest Ozone Index",
     "fontSize": 15
