@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Cloud Cover, Humidity, and Precipitation by Country",
-  "data": { "url": "../Dataset/aggregated_weather.csv" },
+  "data": { "url": "../Dataset/aggregated_weather4.csv" },
   "width": 400,
   "height": 400,
   "title": {
