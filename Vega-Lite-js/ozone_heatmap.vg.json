@@ -76,7 +76,7 @@
           {
             "field": "uv_index",
             "type": "quantitative",
-            "title": "UV Index"
+            "title": "Ultraviolet Index"
           }
         ]
       }
